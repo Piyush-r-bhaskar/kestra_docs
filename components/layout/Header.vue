@@ -276,7 +276,7 @@
                     <li class="nav-item dropdown" @mouseover="mouseOver('resources')" @mouseleave="mouseOut('resources')">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                            aria-expanded="false">
-                            Resources
+                            Learn
                             <ChevronDown class="d-inline-block d-lg-none" />
                         </a>
                         <div class="dropdown-menu pb-1 d-lg-none">
@@ -370,23 +370,9 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <NuxtLink class="nav-link" href="/docs" role="button" @click="globalClick(true)">
-                            <span>
-                                Docs
-                            </span>
-                        </NuxtLink>
-                    </li>
-                    <li class="nav-item">
                         <NuxtLink class="nav-link" href="/plugins" role="button" @click="globalClick(true)">
                             <span>
                                 Plugins
-                            </span>
-                        </NuxtLink>
-                    </li>
-                    <li class="nav-item">
-                        <NuxtLink class="nav-link" href="/blueprints" role="button" @click="globalClick(true)">
-                            <span>
-                                Blueprints
                             </span>
                         </NuxtLink>
                     </li>
@@ -458,40 +444,55 @@
                                     <ul class="d-flex flex-column w-100 gap-2 py-lg-0">
                                         <li>
                                             <NuxtLink class="dropdown-item" href="/features" @click="globalClick(true)">
-                                                <OpenSourceInitiative />
-                                                <p>
-                                                    <span>Core Features</span><br />
-                                                    Explore Kestra's Core Capabilities
-                                                </p>
+                                                <div>
+                                                    <div class="same-row">
+                                                        <OpenSourceInitiative />
+                                                        <span>Core Features</span>
+                                                    </div>
+                                                    <p>
+                                                        Explore Kestra's Core Capabilities
+                                                    </p>
+                                                </div>
                                             </NuxtLink>
                                         </li>
                                         <li>
                                             <NuxtLink class="dropdown-item" href="/enterprise" @click="globalClick(true)">
-                                                <Security />
-                                                <p>
-                                                    <span>Enterprise Edition</span><br />
-                                                    Security and Governance for Enterprise Needs
-                                                </p>
+                                                <div>
+                                                    <div class="same-row">
+                                                        <Security />
+                                                        <span>Enterprise Edition</span>
+                                                    </div>
+                                                    <p>
+                                                        Security and Governance for Enterprise Needs
+                                                    </p>
+                                                </div>
                                             </NuxtLink>
                                         </li>
                                         <li>
                                             <NuxtLink class="dropdown-item" href="/cloud" @click="globalClick(true)">
-                                                <CloudOutline />
-                                                <p>
-                                                    <span>Cloud Edition</span>
-                                                    <strong class="tag">Early Access</strong>
-                                                    <br />
-                                                    Register for the Cloud Edition
-                                                </p>
+                                                <div>
+                                                    <div class="same-row">
+                                                        <CloudOutline />
+                                                        <span>Cloud Edition</span>
+                                                        <strong class="tag">Early Access</strong>
+                                                    </div>
+                                                    <p>
+                                                        Register for the Cloud Edition
+                                                    </p>
+                                                </div>
                                             </NuxtLink>
                                         </li>
                                         <li>
-                                            <NuxtLink class="dropdown-item" href="/overview" @click="globalClick(true)">
-                                                <CursorDefault />
-                                                <p>
-                                                    <span>Preview Access</span><br />
-                                                    Live Access in Read-Only
-                                                </p>
+                                            <NuxtLink class="dropdown-item" href="/preview-access" @click="globalClick(true)">
+                                                <div>
+                                                    <div class="same-row">
+                                                        <CursorDefault />
+                                                        <span>Preview Access</span>
+                                                    </div>
+                                                    <p>
+                                                        Live Access in Read-Only
+                                                    </p>
+                                                </div>
                                             </NuxtLink>
                                         </li>
                                     </ul>
@@ -500,7 +501,7 @@
                         </div>
                         <div @mouseleave="mouseLiveMenu()" id="solutions" class="header-menu-card-section">
                             <div class="header-menu-content">
-                                <div class="row m-0 w-100 solutions-columns pt-3" :class="{ 'overflow-hidden': shouldHideOverflow }">
+                                <div class="row m-0 w-100 solutions-columns pt-2">
                                     <div class="col-lg-4 solutions-column">
                                         <div class="menu-title">
                                             <p>Capabilities</p>
@@ -509,59 +510,83 @@
                                             <li>
                                                 <NuxtLink class="dropdown-item" href="/features/declarative-data-orchestration"
                                                     @click="globalClick(true)">
-                                                    <Xml />
-                                                    <p>
-                                                        <span>Declarative Orchestration</span><br />
-                                                        Infrastructure as Code for All Your Workflows
-                                                    </p>
+                                                    <div>
+                                                        <div class="same-row">
+                                                            <Xml />
+                                                            <span>Declarative Orchestration</span>
+                                                        </div>
+                                                        <p>
+                                                            Infrastructure as Code for All Your Workflows
+                                                        </p>
+                                                    </div>
                                                 </NuxtLink>
                                             </li>
                                             <li>
                                                 <NuxtLink class="dropdown-item" href="/features/scheduling-and-automation"
                                                     @click="globalClick(true)">
-                                                    <RefreshAuto />
-                                                    <p>
-                                                        <span>Automation Platform</span><br />
-                                                        Scheduling and Automation Made Easy
-                                                    </p>
+                                                    <div>
+                                                        <div class="same-row">
+                                                            <RefreshAuto />
+                                                            <span>Automation Platform</span>
+                                                        </div>
+                                                        <p>
+                                                            Scheduling and Automation Made Easy
+                                                        </p>
+                                                    </div>
                                                 </NuxtLink>
                                             </li>
                                             <li>
                                                 <NuxtLink class="dropdown-item" href="/features/code-in-any-language"
                                                     @click="globalClick(true)">
-                                                    <WebBox />
-                                                    <p>
-                                                        <span>Language Agnostic</span><br />
-                                                        Separate your Business Logic from Orchestration Logic
-                                                    </p>
+                                                    <div>
+                                                        <div class="same-row">
+                                                            <WebBox />
+                                                            <span>Language Agnostic</span>
+                                                        </div>
+                                                        <p>
+                                                            Separate your Business Logic from Orchestration Logic
+                                                        </p>
+                                                    </div>
                                                 </NuxtLink>
                                             </li>
                                             <li>
                                                 <NuxtLink class="dropdown-item" href="/use-cases/terraform-provider"
                                                     @click="globalClick(true)">
-                                                    <Terraform />
-                                                    <p>
-                                                        <span>Kestra's Terraform Provider</span><br />
-                                                        Deploy and manage all Kestra resources with Terraform
-                                                    </p>
+                                                    <div>
+                                                        <div class="same-row">
+                                                            <Terraform />
+                                                            <span>Kestra's Terraform Provider</span>
+                                                        </div>
+                                                        <p>
+                                                            Deploy and manage all Kestra resources with Terraform
+                                                        </p>
+                                                    </div>
                                                 </NuxtLink>
                                             </li>
                                             <li>
                                                 <NuxtLink class="dropdown-item" href="/features/api-first" @click="globalClick(true)">
-                                                    <ArrowCollapseAll />
-                                                    <p>
-                                                        <span>API-First</span><br />
-                                                        Learn more about Kestra's API features
-                                                    </p>
+                                                    <div>
+                                                        <div class="same-row">
+                                                            <ArrowCollapseAll />
+                                                            <span>API-First</span>
+                                                        </div>
+                                                        <p>
+                                                            Learn more about Kestra's API features
+                                                        </p>
+                                                    </div>
                                                 </NuxtLink>
                                             </li>
                                             <li>
                                                 <NuxtLink class="dropdown-item" href="/features/api-first" @click="globalClick(true)">
-                                                    <Binoculars />
-                                                    <p>
-                                                        <span>Platform Capabilities</span><br />
-                                                        Powerful Capabilities from the UI
-                                                    </p>
+                                                    <div>
+                                                        <div class="same-row">
+                                                            <Binoculars />
+                                                            <span>Platform Capabilities</span>
+                                                        </div>
+                                                        <p>
+                                                            Powerful Capabilities from the UI
+                                                        </p>
+                                                    </div>
                                                 </NuxtLink>
                                             </li>
                                         </ul>
@@ -574,28 +599,34 @@
                                             <li>
                                                 <NuxtLink class="dropdown-item" href="/use-cases/data-engineers"
                                                     @click="globalClick(true)">
-                                                    <ChartBarStacked />
-                                                    <p>
-                                                        <span>Data Engineers</span>
-                                                    </p>
+                                                    <div>
+                                                        <div class="same-row">
+                                                            <ChartBarStacked />
+                                                            <span>Data Engineers</span>
+                                                        </div>
+                                                    </div>
                                                 </NuxtLink>
                                             </li>
                                             <li>
                                                 <NuxtLink class="dropdown-item" href="/use-cases/software-engineers"
                                                     @click="globalClick(true)">
-                                                    <RefreshAuto />
-                                                    <p>
-                                                        <span>Software Engineers</span>
-                                                    </p>
+                                                    <div>
+                                                        <div class="same-row">
+                                                            <RefreshAuto />
+                                                            <span>Software Engineers</span>
+                                                        </div>
+                                                    </div>
                                                 </NuxtLink>
                                             </li>
                                             <li>
                                                 <NuxtLink class="dropdown-item" href="/use-cases/platform-engineers"
                                                     @click="globalClick(true)">
-                                                    <ServerNetworkOutline />
-                                                    <p>
-                                                        <span>Platform Engineers</span>
-                                                    </p>
+                                                    <div>
+                                                        <div class="same-row">
+                                                            <ServerNetworkOutline />
+                                                            <span>Platform Engineers</span>
+                                                        </div>
+                                                    </div>
                                                 </NuxtLink>
                                             </li>
                                         </ul>
@@ -605,36 +636,42 @@
                                         <ul>
                                             <li>
                                                 <NuxtLink class="dropdown-item" href="/use-cases/retail" @click="globalClick(true)">
-                                                    <BasketOutline />
-                                                    <p>
-                                                        <span>Retail & Supply Chain</span>
-                                                    </p>
+                                                    <div>
+                                                        <div class="same-row">
+                                                            <BasketOutline />
+                                                            <span>Retail & Supply Chain</span>
+                                                        </div>
+                                                    </div>
                                                 </NuxtLink>
                                             </li>
                                             <li>
                                                 <NuxtLink class="dropdown-item" href="/use-cases/healthcare" @click="globalClick(true)">
-                                                    <MedicalBag />
-                                                    <p>
-                                                        <span>Healthcare & Pharmaceuticals</span>
-                                                    </p>
+                                                    <div>
+                                                        <div class="same-row">
+                                                            <MedicalBag />
+                                                            <span>Healthcare & Pharmaceuticals</span>
+                                                        </div>
+                                                    </div>
                                                 </NuxtLink>
                                             </li>
                                             <li>
                                                 <NuxtLink class="dropdown-item" href="/use-cases/automotive" @click="globalClick(true)">
-                                                    <CarBack />
-                                                    <p>
-                                                        <span>Automotive & Heavy Equipment
-                                                        </span>
-                                                    </p>
+                                                    <div>
+                                                        <div class="same-row">
+                                                            <CarBack />
+                                                            <span>Automotive & Heavy Equipment</span>
+                                                        </div>
+                                                    </div>
                                                 </NuxtLink>
                                             </li>
                                             <li>
                                                 <NuxtLink class="dropdown-item" href="/docs/use-cases" @click="globalClick(true)">
-                                                    <ArrowRight />
-                                                    <p>
-                                                        <span>All use-cases
-                                                        </span>
-                                                    </p>
+                                                    <div>
+                                                        <div class="same-row">
+                                                            <ArrowRight />
+                                                            <span>All use-cases</span>
+                                                        </div>
+                                                    </div>
                                                 </NuxtLink>
                                             </li>
                                         </ul>
@@ -646,50 +683,62 @@
                                         <ul class="d-flex flex-column w-100 list-unstyled">
                                             <li>
                                                 <NuxtLink class="dropdown-item" href="/about-us" @click="globalClick(true)">
-                                                    <Domain />
-                                                    <p>
-                                                        <span>About Us</span>
-                                                    </p>
+                                                    <div>
+                                                        <div class="same-row">
+                                                            <Domain />
+                                                            <span>About Us</span>
+                                                        </div>
+                                                    </div>
                                                 </NuxtLink>
                                             </li>
                                             <li>
                                                 <NuxtLink class="dropdown-item" href="/partners" @click="globalClick(true)">
-                                                    <HandshakeOutline />
-                                                    <p>
-                                                        <span>Partner</span>
-                                                    </p>
+                                                    <div>
+                                                        <div class="same-row">
+                                                            <HandshakeOutline />
+                                                            <span>Partner</span>
+                                                        </div>
+                                                    </div>
                                                 </NuxtLink>
                                             </li>
                                             <li>
                                                 <NuxtLink class="dropdown-item" href="/faq" @click="globalClick(true)">
-                                                    <ProgressQuestion />
-                                                    <p>
-                                                        <span>FAQ</span>
-                                                    </p>
+                                                    <div>
+                                                        <div class="same-row">
+                                                            <ProgressQuestion />
+                                                            <span>FAQ</span>
+                                                        </div>
+                                                    </div>
                                                 </NuxtLink>
                                             </li>
                                             <li>
                                                 <NuxtLink class="dropdown-item" href="/community" @click="globalClick(true)">
-                                                    <AccountGroupOutline />
-                                                    <p>
-                                                        <span>Community Overview</span>
-                                                    </p>
+                                                    <div>
+                                                        <div class="same-row">
+                                                            <AccountGroupOutline />
+                                                            <span>Community Overview</span>
+                                                        </div>
+                                                    </div>
                                                 </NuxtLink>
                                             </li>
                                             <li>
                                                 <NuxtLink class="dropdown-item" href="/blogs/community" @click="globalClick(true)">
-                                                    <PostOutline />
-                                                    <p>
-                                                        <span>Community Contents</span>
-                                                    </p>
+                                                    <div>
+                                                        <div class="same-row">
+                                                            <PostOutline />
+                                                            <span>Community Contents</span>
+                                                        </div>
+                                                    </div>
                                                 </NuxtLink>
                                             </li>
                                             <li>
                                                 <NuxtLink class="dropdown-item" href="/use-cases/stories" @click="globalClick(true)">
-                                                    <BookOpenPageVariant />
-                                                    <p>
-                                                        <span>Customer Stories</span>
-                                                    </p>
+                                                    <div>
+                                                        <div class="same-row">
+                                                            <BookOpenPageVariant />
+                                                            <span>Customer Stories</span>
+                                                        </div>
+                                                    </div>
                                                 </NuxtLink>
                                             </li>
                                         </ul>
@@ -704,40 +753,56 @@
                                         <ul>
                                         <li>
                                             <NuxtLink class="dropdown-item" href="/docs" @click="globalClick(true)">
-                                                <Tools />
-                                                <p>
-                                                    <span>Docs</span><br />
-                                                    Everything Kestra
-                                                </p>
+                                                <div>
+                                                    <div class="same-row">
+                                                        <Tools />
+                                                        <span>Docs</span>
+                                                    </div>
+                                                    <p>
+                                                        Everything Kestra
+                                                    </p>
+                                                </div>
                                             </NuxtLink>
                                         </li>
                                         <li>
                                             <NuxtLink class="dropdown-item" href="/blogs" @click="globalClick(true)">
-                                                <PostOutline />
-                                                <p>
-                                                    <span>Blog</span><br />
-                                                    Company news, product updates, and engineering deep dives
-                                                </p>
+                                                <div>
+                                                    <div class="same-row">
+                                                        <PostOutline />
+                                                        <span>Blog</span>
+                                                    </div>
+                                                    <p>
+                                                        Tutorials, Guides, Market Trends and More!
+                                                    </p>
+                                                </div>
                                             </NuxtLink>
                                         </li>
                                         <li>
                                             <NuxtLink class="dropdown-item" href="/blueprints"
                                                 @click="globalClick(true)">
-                                                <ViewList />
-                                                <p>
-                                                    <span>Blueprints</span><br />
-                                                    A Library of ready to use Workflows.
-                                                </p>
+                                                <div>
+                                                    <div class="same-row">
+                                                        <ViewList />
+                                                        <span>Blueprints</span>
+                                                    </div>
+                                                    <p>
+                                                        A Library of ready to use Workflows.
+                                                    </p>
+                                                </div>
                                             </NuxtLink>
                                         </li>
                                         <li>
                                             <NuxtLink class="dropdown-item" href="/tutorial-videos"
                                                 @click="globalClick(true)">
-                                                <VideoCheckOutline />
-                                                <p>
-                                                    <span>Video Tutorials</span><br />
-                                                    your favourite tutorials in video.
-                                                </p>
+                                                <div>
+                                                    <div class="same-row">
+                                                        <VideoCheckOutline />
+                                                        <span>Video Tutorials</span>
+                                                    </div>
+                                                    <p>
+                                                        your favourite tutorials in video.
+                                                    </p>
+                                                </div>
                                             </NuxtLink>
                                         </li>
                                     </ul>
@@ -747,31 +812,43 @@
                                         <li>
                                             <NuxtLink class="dropdown-item" href="/docs/how-to-guides"
                                                 @click="globalClick(true)">
-                                                <LightbulbOn40 />
-                                                <p>
-                                                    <span>How to guides</span><br />
-                                                    Learn step by step how to address use-cases.
-                                                </p>
+                                                <div>
+                                                    <div class="same-row">
+                                                        <LightbulbOn40 />
+                                                        <span>How to guides</span>
+                                                    </div>
+                                                    <p>
+                                                        Learn step by step how to address use-cases.
+                                                    </p>
+                                                </div>
                                             </NuxtLink>
                                         </li>
                                         <li>
                                             <NuxtLink class="dropdown-item" href="/docs/why-kestra"
                                                 @click="globalClick(true)">
-                                                <HeadQuestion />
-                                                <p>
-                                                    <span>Why kestra</span><br />
-                                                    Trust kestra as your unified orchestration tool.
-                                                </p>
+                                                <div>
+                                                    <div class="same-row">
+                                                        <HeadQuestion />
+                                                        <span>Why kestra</span>
+                                                    </div>
+                                                    <p>
+                                                        Trust kestra as your unified orchestration tool.
+                                                    </p>
+                                                </div>
                                             </NuxtLink>
                                         </li>
                                         <li>
                                             <NuxtLink class="dropdown-item" href="/docs/installation"
                                                 @click="globalClick(true)">
-                                                <Flare />
-                                                <p>
-                                                    <span>Quickstart installation guide.</span><br />
-                                                    Trust kestra as your unified orchestration tool.
-                                                </p>
+                                                <div>
+                                                    <div class="same-row">
+                                                        <Flare />
+                                                        <span>Quickstart installation guide.</span>
+                                                    </div>
+                                                    <p>
+                                                        Trust kestra as your unified orchestration tool.
+                                                    </p>
+                                                </div>
                                             </NuxtLink>
                                         </li>
                                     </ul>
@@ -1016,11 +1093,6 @@ export default {
           this.showDownloadLogos = false;
         },
     },
-    computed: {
-        shouldHideOverflow() {
-            return this.windowWidth > 900 && this.windowWidth < 1400;
-        }
-    },
 }
 </script>
 
@@ -1045,21 +1117,6 @@ export default {
         transition: 450ms;
         pointer-events: none;
 
-        .header-arrow {
-            position: absolute;
-            top: -12px;
-            left: 50%;
-            margin: 0 0 0 -6px;
-            width: 22px;
-            height: 22px;
-            border-radius: 3px 0 0 0;
-            box-shadow: -3px -3px 5px rgba(82, 95, 127, .04);
-            transition-property: transform;
-            transition-duration: 450ms;
-            z-index: 2;
-            background-image: linear-gradient(135deg, $black-6 50%, transparent 50%);
-        }
-
         .menu-shadow-container {
             position: absolute;
             inset: 0;
@@ -1067,7 +1124,7 @@ export default {
 
             .header-menu {
                 display: inline-block;
-                padding-top: 15px;
+                padding-top: 12px;
                 transform-origin: 50% -50px;
                 transition: transform 450ms, height 450ms;
                 z-index: 2;
@@ -1105,25 +1162,8 @@ export default {
                             padding: 2rem;
                             width: 100%;
                             height: 100%;
-                            overflow: auto;
+                            overflow: hidden;
                             position: relative;
-
-                            &::-webkit-scrollbar {
-                                width: 4px;
-                                height: 4px;
-                            }
-
-                            &::-webkit-scrollbar-track {
-                                background: transparent;
-                            }
-
-                            &::-webkit-scrollbar-thumb {
-                                background: $black-6;
-                            }
-
-                            &::-webkit-scrollbar-thumb:hover {
-                                background: $black-4;
-                            }
 
                             .menu-title {
                                 margin-bottom: 1.5rem;
@@ -1157,43 +1197,11 @@ export default {
                                 flex-direction: row;
                                 padding: 1rem !important;
                                 white-space: unset;
-                                transition: all 0.2s ease;
-                                min-width: 312px;
+                                min-width: 334px;
 
-                                &:hover {
-                                    background: #F9F5FF;
-                                    .material-design-icon {
-                                        color: #5A3ABC !important;
-                                    }
-                                    span {
-                                        color: #5A3ABC !important;
-                                    }
-                                }
-
-                                .material-design-icon {
-                                    flex-shrink: 0;
-                                    font-size: 24px;
-                                    margin-right: 1rem;
-                                    align-self: unset;
-                                    color: #8405FF;
-                                    transition: color 0.2s ease;
-                                }
-
-                                p {
-                                    font-weight: 400;
-                                    font-size: $font-size-sm;
-                                    color: $black-6;
-                                    line-height: 1.4;
-                                    margin: 0;
-
-                                    span {
-                                        color: $black-1;
-                                        display: inline-block;
-                                        font-size: $font-size-md;
-                                        font-weight: 600;
-                                        margin-bottom: 0.25rem;
-                                        transition: color 0.2s ease;
-                                    }
+                                .same-row {
+                                    display: flex;
+                                    align-items: center;
 
                                     strong.tag {
                                         background-color: #C7F0FF;
@@ -1205,6 +1213,43 @@ export default {
                                         font-weight: 700;
                                         color: #134ECC;
                                     }
+                                }
+
+                                span {
+                                        color: $black-1;
+                                        display: inline-flex;
+                                        font-size: $font-size-md;
+                                        font-weight: 600;
+                                        margin-bottom: 0.25rem;
+                                        transition: color 0.2s ease;
+                                }
+                                
+                                .material-design-icon {
+                                    flex-shrink: 0;
+                                    font-size: 24px;
+                                    margin-right: 8px;
+                                    margin-top: -0.25rem;
+                                    align-self: unset;
+                                    color: #8405FF;
+                                    transition: color 0.2s ease;
+                                }
+
+                                &:hover {
+                                    background: #F9F5FF;
+                                    .material-design-icon {
+                                        color: #5A3ABC !important;
+                                    }
+                                    span {
+                                        color: #5A3ABC !important;
+                                    }
+                                }
+
+                                p {
+                                    font-weight: 400;
+                                    font-size: $font-size-sm;
+                                    color: $black-6;
+                                    line-height: 1.4rem;
+                                    margin: 0;
                                 }
                             }
                         }
@@ -1794,12 +1839,7 @@ export default {
         }
     }
 
-    .solutions-columns {
-        position: relative;
-        
-
-        
-        .solutions-column {
+    .solutions-column {
             position: relative;
             
             &:first-child {
@@ -1818,8 +1858,8 @@ export default {
                 content: '';
                 position: absolute;
                 right: 0;
-                top: -3rem;
-                bottom: -2.8rem;
+                top: -2.5rem;
+                bottom: -6rem;
                 width: .5px;
                 background-color: $white-1;
             }
@@ -1832,7 +1872,6 @@ export default {
                 }
             }
         }
-    }
 }
 </style>
 

@@ -24,27 +24,23 @@ let menuSizes = {
     solutions: {
         xxl: {
             width: '1250px',
-            height: '780px',
+            height: '790px',
             headerMenuTranslateX: 'calc(50vw - 600px)',
-            headerArrowTranslateX: -262
         },
         xl: {
             width: '1240px',
             height: '770px',
             headerMenuTranslateX: 'calc((100vw - 1200px) / 2)',
-            headerArrowTranslateX: -270
         },
         lg: {
             width: '1130px',
             height: '770px',
             headerMenuTranslateX: 'calc((100vw - 1120px) / 2)',
-            headerArrowTranslateX: -255
         },
         md: {
             width: '980px',
-            height: '650px',
+            height: '680px',
             headerMenuTranslateX: 'calc((100vw - 380px) / 2)',
-            headerArrowTranslateX: -240
         },
     },
     resources: {
@@ -52,25 +48,21 @@ let menuSizes = {
             width: '900px',
             height: '480px',
             headerMenuTranslateX: 'calc(50vw - 450px)',
-            headerArrowTranslateX: -173
         },
         xl: {
             width: '900px',
             height: '480px',
             headerMenuTranslateX: 'calc((100vw - 900px) / 2)',
-            headerArrowTranslateX: -177
         },
         lg: {
             width: '800px',
             height: '480px',
             headerMenuTranslateX: 'calc((100vw - 800px) / 2)',
-            headerArrowTranslateX: -165
         },
         md: {
             width: '580px',
             height: '480px',
             headerMenuTranslateX: 'calc((100vw - 580px) / 2)',
-            headerArrowTranslateX: -165
         }
     }
 };
