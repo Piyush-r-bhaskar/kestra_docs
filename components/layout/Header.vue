@@ -500,7 +500,7 @@
                         </div>
                         <div @mouseleave="mouseLiveMenu()" id="solutions" class="header-menu-card-section">
                             <div class="header-menu-content">
-                                <div class="row m-0 w-100 solutions-columns">
+                                <div class="row m-0 w-100 solutions-columns pt-3" :class="{ 'overflow-hidden': shouldHideOverflow }">
                                     <div class="col-lg-4 solutions-column">
                                         <div class="menu-title">
                                             <p>Capabilities</p>
@@ -1015,6 +1015,11 @@ export default {
         closeDownloadLogosModal() {
           this.showDownloadLogos = false;
         },
+    },
+    computed: {
+        shouldHideOverflow() {
+            return this.windowWidth > 900 && this.windowWidth < 1400;
+        }
     },
 }
 </script>
@@ -1792,6 +1797,8 @@ export default {
     .solutions-columns {
         position: relative;
         
+
+        
         .solutions-column {
             position: relative;
             
@@ -1811,10 +1818,10 @@ export default {
                 content: '';
                 position: absolute;
                 right: 0;
-                top: -2rem;
-                bottom: -4rem;
-                width: 1px;
-                background-color: $white-2;
+                top: -3rem;
+                bottom: -2.8rem;
+                width: .5px;
+                background-color: $white-1;
             }
 
             .menu-title {

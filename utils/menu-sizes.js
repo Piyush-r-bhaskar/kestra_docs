@@ -23,26 +23,26 @@ let menuSizes = {
     },
     solutions: {
         xxl: {
-            width: '1200px',
-            height: '800px',
+            width: '1250px',
+            height: '780px',
             headerMenuTranslateX: 'calc(50vw - 600px)',
             headerArrowTranslateX: -262
         },
         xl: {
-            width: '1200px',
-            height: '800px',
+            width: '1240px',
+            height: '770px',
             headerMenuTranslateX: 'calc((100vw - 1200px) / 2)',
             headerArrowTranslateX: -270
         },
         lg: {
-            width: '1120px',
-            height: '800px',
+            width: '1130px',
+            height: '770px',
             headerMenuTranslateX: 'calc((100vw - 1120px) / 2)',
             headerArrowTranslateX: -255
         },
         md: {
-            width: '380px',
-            height: '600px',
+            width: '980px',
+            height: '650px',
             headerMenuTranslateX: 'calc((100vw - 380px) / 2)',
             headerArrowTranslateX: -240
         },
