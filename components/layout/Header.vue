@@ -3,7 +3,8 @@
         :class="{open: isOpen, scrolled: scrolled }">
         <div class="container-xl">
             <NuxtLink class="navbar-brand" href="/" @click="logoClick" @contextmenu.prevent="showDownloadLogosModal">
-                <img src="/logo-white.svg" alt="Kestra, Open source declarative data orchestration" />
+                <img :src="isOpen ? '/logo-black.svg' : '/logo-white.svg'"
+                    alt="Kestra, Open source declarative data orchestration" />
             </NuxtLink>
 
             <div class="download-logos-container" v-if="showDownloadLogos" @click="closeDownloadLogosModal">
@@ -38,13 +39,13 @@
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Product
-                            <ChevronDown class="d-inline-block d-lg-none" />
+                            <ChevronDown class="d-inline-block d-lg-none dropdown-chevron" />
                         </a>
-                        <ul class="dropdown-menu d-lg-none">
-                            <div class="d-flex flex-column w-100 py-lg-0 py-1">
+                        <div class="dropdown-menu pb-1 d-lg-none">
+                            <ul class="dropdown-column">
                                 <li>
                                     <NuxtLink class="dropdown-item" href="/features" @click="globalClick(true)">
-                                        <div>
+                                        <div class="item-row">
                                             <OpenSourceInitiative />
                                             <span>Core Features</span>
                                         </div>
@@ -52,7 +53,7 @@
                                 </li>
                                 <li>
                                     <NuxtLink class="dropdown-item" href="/enterprise" @click="globalClick(true)">
-                                        <div>
+                                        <div class="item-row">
                                             <Security />
                                             <span>Enterprise Edition</span>
                                         </div>
@@ -60,7 +61,7 @@
                                 </li>
                                 <li>
                                     <NuxtLink class="dropdown-item" href="/cloud" @click="globalClick(true)">
-                                        <div>
+                                        <div class="item-row">
                                             <CloudOutline />
                                             <span>Cloud Edition</span>
                                             <strong class="tag">Early Access</strong>
@@ -69,21 +70,21 @@
                                 </li>
                                 <li>
                                     <NuxtLink class="dropdown-item" href="/overview" @click="globalClick(true)">
-                                        <div>
+                                        <div class="item-row">
                                             <CursorDefault />
                                             <span>Preview Access</span>
                                         </div>
                                     </NuxtLink>
                                 </li>
-                            </div>
-                        </ul>
+                            </ul>
+                        </div>
                     </li>
                     <li class="nav-item dropdown" @mouseover="mouseOver('solutions')"
                         @mouseleave="mouseOut('solutions')">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Solutions
-                            <ChevronDown class="d-inline-block d-lg-none" />
+                            <ChevronDown class="d-inline-block d-lg-none dropdown-chevron" />
                         </a>
                         <div class="dropdown-menu pb-1 d-lg-none">
                             <ul class="dropdown-column">
@@ -91,7 +92,7 @@
                                 <li>
                                     <NuxtLink class="dropdown-item" href="/features/declarative-data-orchestration"
                                         @click="globalClick(true)">
-                                        <div>
+                                        <div class="item-row">
                                             <Xml />
                                             <span>Declarative Orchestration</span>
                                         </div>
@@ -100,7 +101,7 @@
                                 <li>
                                     <NuxtLink class="dropdown-item" href="/features/scheduling-and-automation"
                                         @click="globalClick(true)">
-                                        <div>
+                                        <div class="item-row">
                                             <RefreshAuto />
                                             <span>Automation Platform</span>
                                         </div>
@@ -109,7 +110,7 @@
                                 <li>
                                     <NuxtLink class="dropdown-item" href="/features/code-in-any-language"
                                         @click="globalClick(true)">
-                                        <div>
+                                        <div class="item-row">
                                             <WebBox />
                                             <span>Language Agnostic</span>
                                         </div>
@@ -118,7 +119,7 @@
                                 <li>
                                     <NuxtLink class="dropdown-item" href="/use-cases/terraform-provider"
                                         @click="globalClick(true)">
-                                        <div>
+                                        <div class="item-row">
                                             <Terraform />
                                             <span>Kestra's Terraform Provider</span>
                                         </div>
@@ -127,7 +128,7 @@
                                 <li>
                                     <NuxtLink class="dropdown-item" href="/features/api-first"
                                         @click="globalClick(true)">
-                                        <div>
+                                        <div class="item-row">
                                             <ArrowCollapseAll />
                                             <span>API-First</span>
                                         </div>
@@ -136,7 +137,7 @@
                                 <li>
                                     <NuxtLink class="dropdown-item" href="/features/api-first"
                                         @click="globalClick(true)">
-                                        <div>
+                                        <div class="item-row">
                                             <Binoculars />
                                             <span>Platform Capabilities</span>
                                         </div>
@@ -148,7 +149,7 @@
                                 <li>
                                     <NuxtLink class="dropdown-item" href="/use-cases/data-engineers"
                                         @click="globalClick(true)">
-                                        <div>
+                                        <div class="item-row">
                                             <ChartBarStacked />
                                             <span>Data Engineers</span>
                                         </div>
@@ -157,7 +158,7 @@
                                 <li>
                                     <NuxtLink class="dropdown-item" href="/use-cases/software-engineers"
                                         @click="globalClick(true)">
-                                        <div>
+                                        <div class="item-row">
                                             <RefreshAuto />
                                             <span>Software Engineers</span>
                                         </div>
@@ -166,7 +167,7 @@
                                 <li>
                                     <NuxtLink class="dropdown-item" href="/use-cases/platform-engineers"
                                         @click="globalClick(true)">
-                                        <div>
+                                        <div class="item-row">
                                             <ServerNetworkOutline />
                                             <span>Platform Engineers</span>
                                         </div>
@@ -177,7 +178,7 @@
                                 <p class="column-caption">By Industries</p>
                                 <li>
                                     <NuxtLink class="dropdown-item" href="/use-cases/retail" @click="globalClick(true)">
-                                        <div>
+                                        <div class="item-row">
                                             <BasketOutline />
                                             <span>Retail & Supply Chain</span>
                                         </div>
@@ -186,7 +187,7 @@
                                 <li>
                                     <NuxtLink class="dropdown-item" href="/use-cases/healthcare"
                                         @click="globalClick(true)">
-                                        <div>
+                                        <div class="item-row">
                                             <MedicalBag />
                                             <span>Healthcare & Pharmaceuticals</span>
                                         </div>
@@ -195,7 +196,7 @@
                                 <li>
                                     <NuxtLink class="dropdown-item" href="/use-cases/automotive"
                                         @click="globalClick(true)">
-                                        <div>
+                                        <div class="item-row">
                                             <CarBack />
                                             <span>Automotive & Heavy Equipment</span>
                                         </div>
@@ -203,7 +204,7 @@
                                 </li>
                                 <li>
                                     <NuxtLink class="dropdown-item" href="/docs/use-cases" @click="globalClick(true)">
-                                        <div>
+                                        <div class="item-row">
                                             <ArrowRight />
                                             <span>All use-cases</span>
                                         </div>
@@ -214,7 +215,7 @@
                                 <p class="column-caption">Resources</p>
                                 <li>
                                     <NuxtLink class="dropdown-item" href="/about-us" @click="globalClick(true)">
-                                        <div>
+                                        <div class="item-row">
                                             <Domain />
                                             <span>About Us</span>
                                         </div>
@@ -222,7 +223,7 @@
                                 </li>
                                 <li>
                                     <NuxtLink class="dropdown-item" href="/partners" @click="globalClick(true)">
-                                        <div>
+                                        <div class="item-row">
                                             <HandshakeOutline />
                                             <span>Partner</span>
                                         </div>
@@ -230,7 +231,7 @@
                                 </li>
                                 <li>
                                     <NuxtLink class="dropdown-item" href="/faq" @click="globalClick(true)">
-                                        <div>
+                                        <div class="item-row">
                                             <ProgressQuestion />
                                             <span>FAQ</span>
                                         </div>
@@ -238,7 +239,7 @@
                                 </li>
                                 <li>
                                     <NuxtLink class="dropdown-item" href="/community" @click="globalClick(true)">
-                                        <div>
+                                        <div class="item-row">
                                             <AccountGroupOutline />
                                             <span>Community Overview</span>
                                         </div>
@@ -246,7 +247,7 @@
                                 </li>
                                 <li>
                                     <NuxtLink class="dropdown-item" href="/blogs/community" @click="globalClick(true)">
-                                        <div>
+                                        <div class="item-row">
                                             <PostOutline />
                                             <span>Community Contents</span>
                                         </div>
@@ -255,7 +256,7 @@
                                 <li>
                                     <NuxtLink class="dropdown-item" href="/use-cases/stories"
                                         @click="globalClick(true)">
-                                        <div>
+                                        <div class="item-row">
                                             <BookOpenPageVariant />
                                             <span>Customer Stories</span>
                                         </div>
@@ -264,7 +265,7 @@
                                 <li>
                                     <NuxtLink class="dropdown-item" href="/docs/how-to-guides"
                                         @click="globalClick(true)">
-                                        <div>
+                                        <div class="item-row">
                                             <LightbulbOn40 />
                                             <span>How to guides</span>
                                         </div>
@@ -272,7 +273,7 @@
                                 </li>
                                 <li>
                                     <NuxtLink class="dropdown-item" href="/docs/why-kestra" @click="globalClick(true)">
-                                        <div>
+                                        <div class="item-row">
                                             <HeadQuestion />
                                             <span>Why kestra</span>
                                         </div>
@@ -281,14 +282,13 @@
                                 <li>
                                     <NuxtLink class="dropdown-item" href="/docs/installation"
                                         @click="globalClick(true)">
-                                        <div>
+                                        <div class="item-row">
                                             <Flare />
                                             <span>Quickstart installation guide.</span>
                                         </div>
                                     </NuxtLink>
                                 </li>
                             </ul>
-
                         </div>
                     </li>
                     <li class="nav-item dropdown" @mouseover="mouseOver('resources')"
@@ -296,13 +296,13 @@
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Learn
-                            <ChevronDown class="d-inline-block d-lg-none" />
+                            <ChevronDown class="d-inline-block d-lg-none dropdown-chevron" />
                         </a>
                         <div class="dropdown-menu pb-1 d-lg-none">
                             <ul class="dropdown-column">
                                 <li>
                                     <NuxtLink class="dropdown-item" href="/docs" @click="globalClick(true)">
-                                        <div>
+                                        <div class="item-row">
                                             <Tools />
                                             <span>Docs</span>
                                         </div>
@@ -310,7 +310,7 @@
                                 </li>
                                 <li>
                                     <NuxtLink class="dropdown-item" href="/blogs" @click="globalClick(true)">
-                                        <div>
+                                        <div class="item-row">
                                             <PostOutline />
                                             <span>Blog</span>
                                         </div>
@@ -318,7 +318,7 @@
                                 </li>
                                 <li>
                                     <NuxtLink class="dropdown-item" href="/blueprints" @click="globalClick(true)">
-                                        <div>
+                                        <div class="item-row">
                                             <ViewList />
                                             <span>Blueprints</span>
                                         </div>
@@ -326,7 +326,7 @@
                                 </li>
                                 <li>
                                     <NuxtLink class="dropdown-item" href="/tutorial-videos" @click="globalClick(true)">
-                                        <div>
+                                        <div class="item-row">
                                             <VideoCheckOutline />
                                             <span>Video Tutorials</span>
                                         </div>
@@ -335,7 +335,7 @@
                                 <li>
                                     <NuxtLink class="dropdown-item" href="/docs/how-to-guides"
                                         @click="globalClick(true)">
-                                        <div>
+                                        <div class="item-row">
                                             <LightbulbOn40 />
                                             <span>How to guides</span>
                                         </div>
@@ -343,7 +343,7 @@
                                 </li>
                                 <li>
                                     <NuxtLink class="dropdown-item" href="/docs/why-kestra" @click="globalClick(true)">
-                                        <div>
+                                        <div class="item-row">
                                             <HeadQuestion />
                                             <span>Why kestra</span>
                                         </div>
@@ -352,7 +352,7 @@
                                 <li>
                                     <NuxtLink class="dropdown-item" href="/docs/installation"
                                         @click="globalClick(true)">
-                                        <div>
+                                        <div class="item-row">
                                             <Flare />
                                             <span>Quickstart installation guide.</span>
                                         </div>
@@ -363,51 +363,40 @@
                     </li>
                     <li class="nav-item">
                         <NuxtLink class="nav-link" href="/plugins" role="button" @click="globalClick(true)">
-                            <span>
-                                Plugins
-                            </span>
+                            <span>Plugins</span>
                         </NuxtLink>
                     </li>
                     <li class="nav-item">
                         <NuxtLink class="nav-link dropdown-toggle" href="/pricing" role="button"
                             @click="globalClick(true)">
-                            <span>
-                                Pricing
-                            </span>
+                            <span>Pricing</span>
                         </NuxtLink>
                     </li>
                 </ul>
 
                 <ul class="navbar-nav mb-2 mb-lg-0 nav-button nav-footer">
                     <li class="nav-item">
-                        <GithubButton :small="true" />
-
+                        <GithubButton :small="true" class="d-block d-sm-inline-block mb-1 mn-sm-0 btn btn-dark btn-sm" />
                         <NuxtLink @click="globalClick(true)"
-                            class="d-none mb-1 mn-sm-0 btn btn-sm me-0 me-sm-2 d-lg-inline-block talk-us" href="/demo">
+                            class="d-none mb-1 mn-sm-0 btn btn-sm btn-secondary btn-sm me-0 me-sm-2 d-lg-inline-block" href="/demo">
                             <span>
-                                <CalendarOutline class="d-none d-xl-inline-flex" />
                                 Talk to us
                             </span>
                         </NuxtLink>
-
                         <NuxtLink @click="globalClick(true)"
-                            class="d-block d-sm-inline-block mb-1 mn-sm-0 btn btn-animated btn-purple-animated btn-sm get-started"
+                            class="d-block d-sm-inline-block mb-1 mn-sm-0 btn btn-primary btn-sm get-started"
                             href="/docs/getting-started/quickstart#start-kestra">
                             <span>
-                                <Flash class="d-none d-xl-inline-flex" />
-                                Get Started
+                                Get Started!
                             </span>
                         </NuxtLink>
-
                         <NuxtLink @click="globalClick(true)"
-                            class="d-lg-none d-sm-inline-block d-xs-block mb-1 mn-sm-0 btn btn-animated btn-dark-animated btn-md"
+                            class="d-lg-none d-sm-inline-block d-xs-block mb-1 mn-sm-0 btn btn-secondary btn-md"
                             href="/demo">
                             <span>
-                                <CalendarOutline />
                                 Talk to Us
                             </span>
                         </NuxtLink>
-
                         <a @click="globalClick(true)" href="#" id="header-search-button"
                             class="btn btn-sm d-none d-lg-inline-block icon-button" data-bs-toggle="modal"
                             data-bs-target="#search-modal" title="Search">
@@ -492,8 +481,8 @@
                         </div>
                         <div @mouseleave="mouseLiveMenu()" id="solutions" class="header-menu-card-section">
                             <div class="header-menu-content">
-                                <div class="row m-0 w-100 solutions-columns pt-2">
-                                    <div class="col-lg-4 solutions-column">
+                                <div class="row m-0 w-100 pt-2">
+                                    <div class="col-lg-4 header-solution-column">
                                         <div class="menu-title">
                                             <p>Capabilities</p>
                                         </div>
@@ -586,7 +575,7 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <div class="col-lg-4 solutions-column">
+                                    <div class="col-lg-4 header-solution-column">
                                         <div class="menu-title">
                                             <p>By Roles</p>
                                         </div>
@@ -675,7 +664,7 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <div class="col-lg-4 solutions-column">
+                                    <div class="col-lg-4 header-solution-column">
                                         <div class="menu-title">
                                             <p>Resources</p>
                                         </div>
@@ -920,7 +909,7 @@ import Flare from "vue-material-design-icons/Flare.vue"
 
 <script>
 import ChevronDown from "vue-material-design-icons/ChevronDown.vue";
-import ChevronRight from "vue-material-design-icons/ChevronRight.vue";
+import ChevronUp from "vue-material-design-icons/ChevronUp.vue";
 import GithubButton from "../layout/GithubButton.vue";
 import {menuSize} from "~/utils/menu-sizes.js";
 export default {
@@ -1104,157 +1093,194 @@ export default {
 <style lang="scss" scoped>
 @import "../../assets/styles/variable";
 
-    ::deep(body) {
-        @include media-breakpoint-down(lg) {
-            overflow: hidden !important;
-        }
+::deep(body) {
+    @include media-breakpoint-down(lg) {
+        overflow: hidden !important;
     }
+}
 
-    .menu-container {
+.menu-container {
+    position: absolute;
+    top: calc(100% - 1px - 13px);
+    left: 0;
+    width: 100%;
+    height: 1000px;
+    z-index: 1;
+    perspective: 2000px;
+    transition-property: opacity;
+    transition: 450ms;
+    pointer-events: none;
+
+    .menu-shadow-container {
         position: absolute;
-        top: calc(100% - 1px - 13px);
-        left: 0;
-        width: 100%;
-        height: 1000px;
-        z-index: 1;
-        perspective: 2000px;
-        transition-property: opacity;
-        transition: 450ms;
-        pointer-events: none;
+        inset: 0;
+        max-width: 100%;
 
-        .menu-shadow-container {
+        .header-menu {
+            display: inline-block;
+            padding-top: 12px;
+            transform-origin: 50% -50px;
+            transition: transform 400ms, height 400ms, width 400ms;
+            z-index: 2;
             position: absolute;
-            inset: 0;
-            max-width: 100%;
+            top: -1px;
+            left: 0;
+            pointer-events: none;
+            max-width: 100vw;
 
-            .header-menu {
-                display: inline-block;
-                padding-top: 12px;
-                transform-origin: 50% -50px;
-                transition: transform 400ms, height 400ms, width 400ms;
-                z-index: 2;
-                position: absolute;
-                top: -1px;
-                left: 0;
-                pointer-events: none;
-                max-width: 100vw;
+            .header-menu-card {
+                width: 100%;
+                height: 100%;
+                position: relative;
+                z-index: 1;
+                border-radius: 8px;
+                border: 1px solid $black-6;
+                overflow: hidden;
+                background: $white;
 
-                .header-menu-card {
+                &-section {
+                    max-width: 100vw;
                     width: 100%;
                     height: 100%;
-                    position: relative;
-                    z-index: 1;
-                    border-radius: 8px;
-                    border: 1px solid $black-6;
-                    overflow: hidden;
-                    background: $white;
+                    display: flex;
+                    opacity: 0;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
 
-                    &-section {
-                        max-width: 100vw;
+                    &.opacity-100 {
+                        transition: opacity 700ms ease;
+                    }
+
+                    .header-menu-content {
+                        padding: 2rem;
                         width: 100%;
                         height: 100%;
-                        display: flex;
-                        opacity: 0;
-                        position: absolute;
-                        top: 0;
-                        bottom: 0;
+                        overflow: hidden;
+                        position: relative;
 
-                        &.opacity-100 {
-                            transition: opacity 700ms ease;
+                        .menu-title {
+                            margin-bottom: 1.5rem;
+
+                            p {
+                                color: $black-8;
+                                font-size: $font-size-xs;
+                                font-weight: 400;
+                                text-transform: uppercase;
+                            }
                         }
 
-                        .header-menu-content {
-                            padding: 2rem;
-                            width: 100%;
-                            height: 100%;
-                            overflow: hidden;
+                        ul {
+                            list-style: none;
+                            padding: 0;
+                            margin: 0;
+
+                            li {
+                                margin-bottom: 1rem;
+
+                                &:last-child {
+                                    margin-bottom: 0;
+                                }
+                            }
+                        }
+
+                        .dropdown-item {
+                            align-items: flex-start;
+                            border-radius: 8px !important;
+                            display: flex !important;
+                            flex-direction: row;
+                            padding: 1rem !important;
+                            min-width: 350px;
+                            width: 100% !important;
+                            text-transform: capitalize;
+
+                            .same-row {
+                                display: flex;
+                                align-items: center;
+
+                                strong.tag {
+                                    background-color: #C7F0FF;
+                                    border: 1px solid #7FBBFF;
+                                    padding: 4px 6px;
+                                    border-radius: 4px;
+                                    font-size: $font-size-xs;
+                                    margin-left: 8px;
+                                    font-weight: 700;
+                                    color: #134ECC;
+                                }
+                            }
+
+                            span {
+                                color: $black-1;
+                                display: inline-flex;
+                                font-size: $font-size-md;
+                                font-weight: 600;
+                                margin-bottom: 0.25rem;
+                                transition: color 0.2s ease;
+                            }
+
+                            .material-design-icon {
+                                flex-shrink: 0;
+                                font-size: 24px;
+                                margin-right: 8px;
+                                margin-top: -0.25rem;
+                                align-self: unset;
+                                color: #8405FF;
+                                transition: color 0.2s ease;
+                            }
+
+                            &:hover {
+                                background: #F9F5FF;
+
+                                .material-design-icon {
+                                    color: #5A3ABC !important;
+                                }
+
+                                span {
+                                    color: #5A3ABC !important;
+                                }
+                            }
+
+                            p {
+                                font-weight: 400;
+                                font-size: $font-size-sm;
+                                color: $black-6;
+                                line-height: 1.4rem;
+                                margin: 0;
+                            }
+                        }
+
+
+                        .header-solution-column {
                             position: relative;
+
+                            &:first-child {
+                                padding-right: 2rem;
+                            }
+
+                            &:nth-child(2) {
+                                padding: 0 2rem;
+                            }
+
+                            &:last-child {
+                                padding-left: 2rem;
+                            }
+
+                            &:not(:last-child)::after {
+                                content: '';
+                                position: absolute;
+                                right: 0;
+                                top: -2.5rem;
+                                bottom: -6rem;
+                                width: .5px;
+                                background-color: $white-1;
+                            }
 
                             .menu-title {
                                 margin-bottom: 1.5rem;
 
-                                p {
-                                    color: $black-8;
-                                    font-size: $font-size-xs;
-                                    font-weight: 400;
-                                    text-transform: uppercase;
-                                }
-                            }
-
-                            ul {
-                                list-style: none;
-                                padding: 0;
-                                margin: 0;
-
-                                li {
-                                    margin-bottom: 1rem;
-
-                                    &:last-child {
-                                        margin-bottom: 0;
-                                    }
-                                }
-                            }
-
-                            .dropdown-item {
-                                align-items: flex-start;
-                                border-radius: 8px !important;
-                                display: flex !important;
-                                flex-direction: row;
-                                padding: 1rem !important;
-                                min-width: 350px;
-                                width: 100% !important;
-
-                                .same-row {
-                                    display: flex;
-                                    align-items: center;
-
-                                    strong.tag {
-                                        background-color: #C7F0FF;
-                                        border: 1px solid #7FBBFF;
-                                        padding: 4px 6px;
-                                        border-radius: 4px;
-                                        font-size: $font-size-xs;
-                                        margin-left: 8px;
-                                        font-weight: 700;
-                                        color: #134ECC;
-                                    }
-                                }
-
-                                span {
-                                        color: $black-1;
-                                        display: inline-flex;
-                                        font-size: $font-size-md;
-                                        font-weight: 600;
-                                        margin-bottom: 0.25rem;
-                                        transition: color 0.2s ease;
-                                }
-                                
-                                .material-design-icon {
-                                    flex-shrink: 0;
-                                    font-size: 24px;
-                                    margin-right: 8px;
-                                    margin-top: -0.25rem;
-                                    align-self: unset;
-                                    color: #8405FF;
-                                    transition: color 0.2s ease;
-                                }
-
-                                &:hover {
-                                    background: #F9F5FF;
-                                    .material-design-icon {
-                                        color: #5A3ABC !important;
-                                    }
-                                    span {
-                                        color: #5A3ABC !important;
-                                    }
-                                }
-
-                                p {
-                                    font-weight: 400;
-                                    font-size: $font-size-sm;
-                                    color: $black-6;
-                                    line-height: 1.4rem;
-                                    margin: 0;
+                                &:not(:first-child) {
+                                    margin-top: 2rem;
                                 }
                             }
                         }
@@ -1263,177 +1289,214 @@ export default {
             }
         }
     }
+}
 
 
-    .download-logos-container {
+.download-logos-container {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    z-index: 4;
+
+    .download-logos {
         position: fixed;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 100vh;
-        z-index: 4;
-        .download-logos {
-            position: fixed;
-            top: 100%;
-            left: 14%;
-            border-radius: calc($border-radius-lg * 2);
-            border: 1px solid $black-6;
-            display: flex;
-            flex-direction: column;
-            gap: $spacer;
-            padding: calc($spacer * 2);
-            background-color: rgba(45, 45, 46, 0.93);
-            transition-duration: 1s;
-            z-index: 5;
-
-            @include media-breakpoint-down(lg) {
-                left: 5%;
-                top: 110%;
-            }
-
-            p.title {
-                font-size: 16px;
-                font-weight: 400;
-                line-height: 24px;
-                color: $white;
-            }
-
-            .close-icon {
-                position: absolute;
-                top: 1rem;
-                right: 1rem;
-                cursor: pointer;
-            }
-        }
-    }
-
-    .container-xl {
-        @include media-breakpoint-down(xxl) {
-            .navbar-brand {
-                margin-left: 0;
-                margin-right: 0;
-            }
-        }
-        @include media-breakpoint-down(xxl) {
-            .navbar-brand {
-                margin-right: 0.5rem;
-            }
-        }
-    }
-
-    .container-xl {
-        @include media-breakpoint-down(lg) {
-            padding-left: 0;
-            padding-right: 0;
-            padding-top: calc($spacer / 2);
-
-            .navbar-brand {
-                margin: 0 0 calc($spacer * 0.75) $spacer;
-            }
-
-            .nav-items {
-                margin: 0 $spacer calc($spacer * 0.75) 0;
-
-                span.menu-text {
-                    margin-top: calc($spacer * 0.2);
-                }
-            }
-        }
-    }
-    nav {
-        background: $black-4;
-        transform: translateY(0);
-        max-height: 100%;
-        width: 100vw;
-        background: transparent;
+        top: 100%;
+        left: 14%;
+        border-radius: calc($border-radius-lg * 2);
+        border: 1px solid $black-6;
+        display: flex;
+        flex-direction: column;
+        gap: $spacer;
+        padding: calc($spacer * 2);
+        background-color: rgba(45, 45, 46, 0.93);
+        transition-duration: 1s;
+        z-index: 5;
 
         @include media-breakpoint-down(lg) {
-            padding: 0;
-            padding-top: 0;
-            background-color: $black-9;
+            left: 5%;
+            top: 110%;
         }
 
-        &.scrolled {
-            @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
-                & {
-                    background-color: $menu-bg;
-                    transition: background-color 250ms ease-in-out;
-                }
-            }
-            &.open {
-                @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
-                    & {
-                        background-color: $black-9;
-                    }
-                }
-            }
+        p.title {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: $white;
         }
 
-
-
-        &::before {
-            content: "";
+        .close-icon {
             position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
-                & {
-                    -webkit-backdrop-filter: $menu-backdrop-filter;
-                    backdrop-filter: $menu-backdrop-filter;
-                    @include media-breakpoint-down(lg) {
-                        content: none;
-                    }
-                }
-            }
+            top: 1rem;
+            right: 1rem;
+            cursor: pointer;
         }
+    }
+}
+
+.container-xl {
+    @include media-breakpoint-down(xxl) {
+        .navbar-brand {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+
+    @include media-breakpoint-down(xxl) {
+        .navbar-brand {
+            margin-right: 0.5rem;
+        }
+    }
+}
+
+.container-xl {
+    @include media-breakpoint-down(lg) {
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: calc($spacer / 2);
 
         .navbar-brand {
-            img {
-                height: 100%;
-                width: 180px;
-                @include media-breakpoint-down(xl) {
-                    width: 130px;
+            margin: 0 0 calc($spacer * 0.75) $spacer;
+        }
+
+        .nav-items {
+            margin: 0 $spacer calc($spacer * 0.75) 0;
+
+            span.menu-text {
+                margin-top: calc($spacer * 0.3);
+                font-size: $font-size-md;
+            }
+        }
+    }
+}
+
+.open {
+    .container-xl {
+        .nav-items {
+            span.menu-text {
+                color: $black-1;
+            }
+
+            .icon-button {
+                color: $black-1 !important;
+            }
+
+            button.navbar-toggler {
+                color: $black-1 !important;
+            }
+        }
+    }
+}
+
+nav {
+    background: $black-4;
+    transform: translateY(0);
+    max-height: 100%;
+    width: 100vw;
+    background: transparent;
+
+    @include media-breakpoint-down(lg) {
+        padding: 0;
+        padding-top: 0;
+        background-color: $black-9;
+    }
+
+    &.scrolled,
+    &.open {
+        @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+            & {
+                background-color: $menu-bg;
+                transition: background-color 250ms ease-in-out;
+            }
+        }
+
+        &.open {
+            @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+                & {
+                    background-color: $white;
                 }
+            }
+        }
+    }
+
+
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+
+        @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+            & {
+                -webkit-backdrop-filter: $menu-backdrop-filter;
+                backdrop-filter: $menu-backdrop-filter;
+
                 @include media-breakpoint-down(lg) {
-                    width: 110px;
+                    content: none;
                 }
             }
-
         }
+    }
 
-        a.nav-link, button.navbar-toggler, &.btn.search, .nav-item a, div.nav-items a {
-            color: var(--gray-white, #FFF) !important;
-            box-shadow: none !important;
-        }
+    .navbar-brand {
+        img {
+            height: 100%;
+            width: 180px;
 
-        a.talk-us {
-            border:1px solid $black-6;
-            background-color: $black-4;
+            @include media-breakpoint-down(xl) {
+                width: 130px;
+            }
 
-            &:hover {
-                background-color: $black-6;
+            @include media-breakpoint-down(lg) {
+                width: 110px;
             }
         }
 
-        div.nav-items {
-            a {
-                margin-top: calc($spacer * 0.4);
-            }
-            a, button {
-                :deep(.material-design-icon) {
+    }
+
+    a.nav-link,
+    button.navbar-toggler,
+    &.btn.search,
+    .nav-item a,
+    div.nav-items a {
+        color: var(--gray-white, #FFF);
+        box-shadow: none !important;
+    }
+
+    a.talk-us {
+        border: 1px solid $black-6;
+        background-color: $white;
+        color: $black-1 !important;
+
+        &:hover {
+            background-color: $white-4;
+        }
+    }
+
+    div.nav-items {
+        a {
+            margin-top: calc($spacer * 0.4);
+        }
+
+        a,
+        button {
+            :deep(.material-design-icon) {
+                width: calc($spacer * 1.5);
+                height: calc($spacer * 1.5);
+
+                .material-design-icon__svg {
                     width: calc($spacer * 1.5);
                     height: calc($spacer * 1.5);
-                    .material-design-icon__svg {
-                        width: calc($spacer * 1.5);
-                        height: calc($spacer * 1.5);
-                    }
                 }
             }
         }
+    }
 
     .navbar-toggler {
         border: 0;
@@ -1451,31 +1514,28 @@ export default {
             overflow-x: hidden;
             background-color: $white;
             height: calc(100vh - 3.3rem);
+            padding: 0 2rem;
         }
 
         ul.navbar-nav {
             li {
-
                 a.dropdown-item {
                     white-space: unset;
+                    text-transform: capitalize;
+                    padding: 1rem 0;
                 }
 
                 @include media-breakpoint-between(lg, xxl) {
                     font-size: 1rem;
                 }
 
-                &:last-child {
-                    @include media-breakpoint-down(lg) {
-                        border-bottom: 1px solid $white-4;
-                    }
-                }
-
                 a.nav-link {
                     border-radius: $border-radius;
 
                     span.material-design-icon {
-                        transition: all .2s cubic-bezier(1,.25,.25,.8);
+                        transition: all .2s cubic-bezier(1, .25, .25, .8);
                         will-change: scaleY, top;
+
                         &.show {
                             top: 4px;
                             transform: scaleY(-1);
@@ -1487,8 +1547,11 @@ export default {
                         justify-content: space-between;
                         border-radius: 0;
                         background-color: $white;
-                        border-top: 1px solid $white-4;
+                        color: $black-1 !important;
+                        font-size: $font-size-xl !important;
+                        font-weight: 600 !important;
                     }
+
                     @include media-breakpoint-down(xl) {
                         padding-right: 5px;
                         padding-left: 5px;
@@ -1498,21 +1561,20 @@ export default {
                     @include media-breakpoint-down(lg) {
                         background-color: $white;
                         border-radius: 0;
-                        border-top: 1px solid $white-4;
+                        border-bottom: 1px solid $white-1;
                         display: flex;
                         justify-content: space-between;
-                        padding: 1.6rem 2rem;
+                        padding: 1.5rem 0;
                         font-weight: 500;
                         line-height: 26px;
                     }
-
-
 
                     &:after {
                         display: none;
                     }
 
-                    &.show, &:hover {
+                    &.show,
+                    &:hover {
                         @include media-breakpoint-up(lg) {
                             color: #CDD5EF !important;
                         }
@@ -1521,42 +1583,45 @@ export default {
                     &.show {
                         @include media-breakpoint-down(lg) {
                             background-color: $white;
+                            padding-bottom: 0;
+                            border: 0;
+                        }
+                        .dropdown-chevron {
+                            transform: rotate(180deg);
+                            transition: all 0.3s ease;
                         }
                     }
                 }
 
-
-
                 .dropdown-menu {
-                    color: $black-1;
-                    padding: calc($spacer * 1.875)  calc($spacer * 1.875) !important;
+                    padding: 0 calc($spacer * 1.875) calc($spacer * 1.875);
+                    margin-top: 10px;
+
                     &.show {
                         @include media-breakpoint-down(lg) {
                             background-color: $white;
                             border-radius: 0;
                             display: block;
                             border: none;
+                            padding: 0 !important;
                         }
                     }
 
                     .dropdown-column {
-                        margin-bottom: 2rem;
+                        margin-bottom: 1rem;
                         display: flex;
                         flex-direction: column;
-                        gap: 1rem;
                         list-style: none;
                         padding-left: 0;
                         min-width: 312px;
 
-
                         .column-caption {
                             color: #B9B9BA;
-                            font-size: 1rem;
+                            font-size: $font-size-xs;
                             font-weight: 600;
                             line-height: 24px;
-                            border-bottom: 1.11px solid $white-4;
-                            padding-bottom: 9px;
                             margin: 0;
+                            text-transform: uppercase;
                         }
                     }
 
@@ -1564,45 +1629,50 @@ export default {
                         background-color: transparent;
                         color: $black-1;
                         border: 0 !important;
-                        border-radius: .25rem;
+
+                        &:not(:last-of-type) {
+                            border-bottom: 1px solid $white-1 !important;
+                        }
+
+                        .item-row {
+                            display: flex;
+                            align-items: center;
+                            gap: .5rem;
+
+                        }
 
                         .dropdown-item {
-                            align-items: center;
-                            display: flex;
-                            flex-direction: row;
-                            margin-bottom: .5rem;
-                            padding: 8px;
-
-                            span {
-                                    color: $black !important;
-                                    display: inline-block;
-                                    font-size: 1remrem;
-                                    font-weight: 600;
-                                    line-height: 1.37rem;
-                                }
-
-                                strong.tag {
-                                    background-color: #C7F0FF;
-                                        border: 1px solid #7FBBFF;
-                                        padding: 4px 6px;
-                                        border-radius: 4px;
-                                        font-size: $font-size-xs;
-                                        margin-left: 8px;
-                                        font-weight: 700;
-                                        color: #134ECC;
-                                }
-
-                            span {
-                                flex-shrink: 0;
-                                margin-right: .5rem;
-
-                                :deep(.material-design-icon__svg) {
-                                    fill: #8405FF;
-                                }
-                            }
-
                             &:last-child {
                                 margin-bottom: 0;
+                            }
+
+                            span {
+                                color: $black !important;
+                                display: inline-block;
+                                font-size: 1rem;
+                                font-weight: 700;
+                                line-height: 1.37rem;
+                                flex-shrink: 0;
+                                margin-right: .5rem;
+                            }
+
+                            strong.tag {
+                                background-color: #C7F0FF;
+                                border: 1px solid #7FBBFF;
+                                padding: 4px 6px;
+                                border-radius: 4px;
+                                font-size: $font-size-md;
+                                margin-left: 8px;
+                                font-weight: 700;
+                                color: #134ECC;
+                            }
+
+
+
+                            :deep(.material-design-icon__svg) {
+                                fill: #8405FF;
+                                width: 24px;
+                                height: 24px;
                             }
                         }
                     }
@@ -1621,15 +1691,12 @@ export default {
             .btn {
                 &.icon-button {
                     font-size: 1.5rem;
+                    color: $black-1;
 
                     &:hover {
                         color: $purple-36 !important;
                     }
                 }
-            }
-
-            :deep(.btn) {
-                font-weight: normal;
             }
         }
     }
@@ -1648,12 +1715,27 @@ export default {
             }
 
             .get-started {
-                padding: calc($spacer * 0.6) $spacer !important;
+                padding: calc($spacer * 0.65) $spacer !important;
             }
+
+            .github {
+                background: #F7F7F8;
+                border: 1px solid $white-2 !important;
+                padding: calc($spacer * 0.25) $spacer;
+                border-radius: $border-radius-lg;
+            }
+
+            :deep(.github .btn-outline-dark) {
+                background: transparent;
+                color: $black-1;
+
+
+            }
+
+
         }
+
         @include media-breakpoint-down(md) {
-
-
             li {
                 flex-direction: column-reverse;
                 gap: $spacer;
@@ -1663,6 +1745,10 @@ export default {
                     width: 100%;
                 }
             }
+
+            .github {
+                width: 100%;
+            }
         }
     }
 
@@ -1671,29 +1757,27 @@ export default {
         font-size: 12px !important;
     }
 
-        &:not(.transparent) {
-            :deep(.github) {
-                background: #333336;
+    &:not(.transparent) {
+        :deep(.github) {
+            &:hover {
+                .btn-dark {
+                    background: transparent !important;
+                }
 
-                &:hover {
-                    .btn-dark {
-                        background: #18181B !important;
-                    }
-
-                    .btn-outline-dark {
-                        background: #333336 !important;
-                    }
+                .btn-outline-dark {
+                    background: transparent !important;
                 }
             }
-            :deep(.github .btn-dark) {
-                color: $white-6;
-            }
-
-            :deep(.github .btn-outline-dark) {
-                background: #18181B;
-                color: $white-6;
-            }
         }
+
+        :deep(.github .btn-dark) {
+            color: $white-6;
+        }
+
+        :deep(.github .btn-outline-dark) {
+            background: transparent;
+        }
+    }
 
     .btn:hover {
         color: $purple-36;
@@ -1705,7 +1789,6 @@ export default {
 
         a,
         a.nav-link,
-        button.navbar-toggler,
         &.btn.search {
             color: var(--bs-white);
         }
@@ -1719,7 +1802,6 @@ export default {
             ul.navbar-nav {
                 li {
                     a.nav-link {
-                        
 
                         &.show,
                         &:hover {
@@ -1769,39 +1851,6 @@ export default {
         }
     }
 
-    .solutions-column {
-            position: relative;
-            
-            &:first-child {
-                padding-right: 2rem;
-            }
-            
-            &:nth-child(2) {
-                padding: 0 2rem;
-            }
-            
-            &:last-child {
-                padding-left: 2rem;
-            }
-            
-            &:not(:last-child)::after {
-                content: '';
-                position: absolute;
-                right: 0;
-                top: -2.5rem;
-                bottom: -6rem;
-                width: .5px;
-                background-color: $white-1;
-            }
-
-            .menu-title {
-                margin-bottom: 1.5rem;
-                
-                &:not(:first-child) {
-                    margin-top: 2rem;
-                }
-            }
-        }
 }
 </style>
 

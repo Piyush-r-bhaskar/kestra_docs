@@ -24,22 +24,22 @@ let menuSizes = {
     solutions: {
         xxl: {
             width: '1320px',
-            height: '770px',
+            height: '750px',
             headerMenuTranslateX: 'calc(50vw - 600px)',
         },
         xl: {
             width: '1300px',
-            height: '770px',
+            height: '750px',
             headerMenuTranslateX: 'calc((100vw - 1200px) / 2)',
         },
         lg: {
             width: '1250px',
-            height: '770px',
+            height: '750px',
             headerMenuTranslateX: 'calc((100vw - 1120px) / 2)',
         },
         md: {
             width: '1200px',
-            height: '770px',
+            height: '750px',
             headerMenuTranslateX: 'calc((100vw - 380px) / 2)',
         },
     },
