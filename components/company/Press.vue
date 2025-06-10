@@ -50,7 +50,7 @@
     .container-fluid {
       color: var(--bs-white);
       padding-top: 80px;
-      margin-top: -80px;
+      // margin-top: -80px;
       background: $black-1 url(/landing/contact/Mask-vectors.svg) no-repeat 31% center;
       background-size: 190% 99%;
 

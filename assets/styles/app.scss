@@ -591,6 +591,7 @@ blockquote.blockquote {
         max-height: 20rem;
         overflow: auto;
         background-color: rgb(0,0,0,.6);
+        -webkit-backdrop-filter: blur(4px);
         backdrop-filter: blur(4px);
         color: var(--kestra-io-token-color-white);
         border: 1px solid var(--kestra-io-token-color-border-primary);
@@ -640,6 +641,15 @@ blockquote.blockquote {
             display: block;
         }
     }
+}
+
+::selection {
+    background-color: #DE97FF;
+    color: $black-9;
+}
+::-moz-selection {
+    background-color: #DE97FF;
+    color: $black-9;
 }
 
 
