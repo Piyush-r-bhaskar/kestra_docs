@@ -22,6 +22,8 @@
           </p>
         </div>
         <NuxtImg src="/landing/company/teams/line.svg" alt="Connecting Line" class="line" width="224" height="268" />
+        <NuxtImg src="/landing/company/teams/flare.svg" alt="Flare Effect" class="flare" />
+        <NuxtImg src="/landing/company/teams/flare.svg" alt="Flare Effect 2" class="flare-2" />
       </div>
     </section>
 
@@ -190,6 +192,38 @@ const companyLogos = [
         transform: translateX(-50%);
         z-index: 1;
         display: none;
+
+        @media (min-width: 1400px) {
+          display: block;
+        }
+      }
+
+      .flare {
+        position: absolute;
+        bottom: -48px;
+        left: 424px;
+        transform: translateX(-50%);
+        z-index: 2;
+        display: none;
+        width: 50px;
+        height: 50px;
+        mix-blend-mode: color-dodge;
+
+        @media (min-width: 1400px) {
+          display: block;
+        }
+      }
+
+      .flare-2 {
+        position: absolute;
+        bottom: 218px;
+        left: 55%;
+        transform: translateX(-50%);
+        z-index: 2;
+        display: none;
+        width: 50px;
+        height: 50px;
+        mix-blend-mode: color-dodge;
 
         @media (min-width: 1400px) {
           display: block;

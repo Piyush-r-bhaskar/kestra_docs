@@ -65,11 +65,8 @@ const investorsProfiles = [
 .container {
   max-width: 100%;
   background-color: white;
-  padding: 5rem 1rem;
-
-  @include media-breakpoint-up(sm) { padding: 4rem 2rem; }
-  @include media-breakpoint-up(md) { padding: 4.5rem 4rem; }
-  @include media-breakpoint-up(xxl) { padding: 4.5rem 150px; }
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .title-section {

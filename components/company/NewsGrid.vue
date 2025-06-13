@@ -53,7 +53,7 @@ const { data: filteredPosts } = await useAsyncData('news-grid-posts', async () =
   background-color: white;
   padding: 5rem 1rem;
 
-  @include media-breakpoint-up(sm) { padding: 4rem 2rem; }
+  @include media-breakpoint-up(sm) { padding: 4rem 1rem; }
   @include media-breakpoint-up(md) { padding: 4.5rem 4rem; }
   @include media-breakpoint-up(lg) { padding: 4.5rem; }
   @include media-breakpoint-up(xxl) { padding: 4.5rem 150px; }

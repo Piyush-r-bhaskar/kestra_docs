@@ -101,7 +101,7 @@ const values = [
 
 .mission-content {
   background: #0a0a0f;
-  color: white;
+  color: $white;
   padding: 0 56px 0 290px;
   display: flex;
   flex-direction: column;
