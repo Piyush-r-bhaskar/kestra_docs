@@ -61,26 +61,22 @@ const values = [
   {
     icon: Verified,
     title: "Quality",
-    description:
-      "We are committed to deliver a platform that meets the highest standards.",
+    description: "We are committed to deliver a platform that meets the highest standards.",
   },
   {
     icon: Hub,
     title: "Collaboration",
-    description:
-      "We are creating a strong relationships with our users, customers, and team members.",
+    description: "We are creating a strong relationships with our users, customers, and team members.",
   },
   {
     icon: SupervisedUserCircle,
     title: "User-Centric",
-    description:
-      "We incorporate users feedbacks and address their challenges as we continue to build Kestra.",
+    description: "We incorporate users feedbacks and address their challenges as we continue to build Kestra.",
   },
   {
     icon: Opacity,
     title: "Transparency",
-    description:
-      "We value openness and honesty in all aspects of our work at every steps.",
+    description: "We value openness and honesty in all aspects of our work at every steps.",
   },
 ];
 </script>

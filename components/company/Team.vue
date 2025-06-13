@@ -11,7 +11,7 @@
           :key="member.name"
           class="team-card"
           data-aos="zoom-in"
-          :data-aos-delay="100 + (index * 50)"
+          :data-aos-delay="50 + (index * 50)"
         >
           <NuxtImg :src="member.image" :alt="member.name" />
           <div class="team-info">
@@ -47,14 +47,14 @@ const teamMembers = [
   { name: "Brian Mulier", title: "Software Engineer", image: "/landing/company/teams/bmulier-round.png" },
   { name: "Nicolas Kwiatkowski", title: "Software Engineer", image: "/landing/company/teams/nkwiatkowski-round.png" },
   { name: "Mathieu Gabelle", title: "Software Engineer", image: "/landing/company/teams/mgabelle-round.png" },
-  { name: "Roman ACEVEDO", title: "Software Engineer", image: "/landing/company/teams/racevedo-round.png" },
+  { name: "Roman Acevedo", title: "Software Engineer", image: "/landing/company/teams/racevedo-round.png" },
   { name: "Miloš Paunović", title: "Senior Frontend Engineer", image: "/landing/company/teams/mpaunovic-round.png" },
   { name: "Bart Ledoux", title: "Senior Frontend Engineer", image: "/landing/company/teams/elevatebart.png" },
   { name: "Marco Sabatini", title: "Platform Engineer", image: "/landing/company/teams/msabatini-round.png" },
   { name: "Gilles Perreymond", title: "Platform Engineer", image: "/landing/company/teams/gperreymond-round.png" },
   { name: "Alex Emerich", title: "Technical Writer", image: "/landing/company/teams/aemerich-round.png" },
   { name: "Izaac Carcenac Sautron", title: "QA Software Engineer", image: "/landing/company/teams/izaac-round.png" },
-  { name: "Rok GRABNAR", title: "Data Analyst", image: "/landing/company/teams/rgrabnar-round.png" },
+  { name: "Rok Grabnar", title: "Data Analyst", image: "/landing/company/teams/rgrabnar-round.png" },
   { name: "Wish to see <br />your photo here?", title: null, image: "/landing/company/teams/portrait-round.png", isOpenPosition: true }
 ]
 </script>

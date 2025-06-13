@@ -5,8 +5,8 @@
         <div class="title-content">
             <h2 class="title">News</h2>
             <p class="subtitle">Recent mentions in media.</p>
+        </div>
       </div>
-    </div>
       <div
         v-for="(post, index) in filteredPosts"
         :key="post.path"
@@ -47,10 +47,11 @@ const { data: filteredPosts } = await useAsyncData('news-grid-posts', async () =
 
 <style lang="scss" scoped>
 @import "../../assets/styles/_variable.scss";
+$white-color: #F0F0F0;
 
 .container {
   max-width: 100%;
-  background-color: white;
+  background-color: $white;
   padding: 5rem 1rem;
 
   @include media-breakpoint-up(sm) { padding: 4rem 1rem; }
@@ -81,17 +82,17 @@ const { data: filteredPosts } = await useAsyncData('news-grid-posts', async () =
   
   @media (max-width: 767px) {
     &:not(:first-child) {
-      border-top: 1px solid #F0F0F0;
+      border-top: 1px solid $white-color;
     }
   }
   
   @media (min-width: 768px) and (max-width: 1199px) {
     &:nth-child(odd) {
-      border-right: 1px solid #F0F0F0;
+      border-right: 1px solid $white-color;
     }
     
     &:not(:first-child):not(:nth-child(2)) {
-      border-top: 1px solid #F0F0F0;
+      border-top: 1px solid $white-color;
     }
   }
   
@@ -99,13 +100,13 @@ const { data: filteredPosts } = await useAsyncData('news-grid-posts', async () =
     &:nth-child(1),
     &:nth-child(2),
     &:nth-child(3) {
-      border-bottom: 1px solid #F0F0F0;
+      border-bottom: 1px solid $white-color;
     }
     
     &:nth-child(2),
     &:nth-child(5) {
-      border-left: 1px solid #F0F0F0;
-      border-right: 1px solid #F0F0F0;
+      border-left: 1px solid $white-color;
+      border-right: 1px solid $white-color;
     }
   }
   

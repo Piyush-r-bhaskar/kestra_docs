@@ -3,17 +3,17 @@
     <div class="title-section" data-aos="fade-up">
       <h2 class="title">Our investors</h2>
       <p class="subtitle">
-        Kestra is proudly backed by two strategic funding rounds: a <strong>$3M Pre-seed</strong> 
-        <br class="d-none d-lg-block"> and an <strong>$8M Seed round</strong>, supported by visionary leaders and founders <br class="d-none d-lg-block"> from 
-        industry-leading companies. These investments fuel Kestra's mission to<br class="d-none d-lg-block"> 
+        Kestra is proudly backed by two strategic funding rounds: a <strong>$3M Pre-seed</strong>
+        <br class="d-none d-lg-block"> and an <strong>$8M Seed round</strong>, supported by visionary leaders and founders <br class="d-none d-lg-block"> from
+        industry-leading companies. These investments fuel Kestra's mission to<br class="d-none d-lg-block">
         redefine orchestration.
       </p>
     </div>
 
     <div class="logos" data-aos="fade-up" data-aos-delay="200">
-      <div 
-        v-for="(logo, index) in investorsLogos" 
-        :key="logo.name" 
+      <div
+        v-for="(logo, index) in investorsLogos"
+        :key="logo.name"
         class="logo"
         data-aos="zoom-in"
         :data-aos-delay="300 + (index * 100)"
@@ -23,12 +23,12 @@
     </div>
 
     <div class="profiles" data-aos="fade-up" data-aos-delay="600">
-      <div 
+      <div
         v-for="(profile, index) in investorsProfiles"
-        :key="profile.name" 
+        :key="profile.name"
         class="profile"
         data-aos="fade-up"
-        :data-aos-delay="700 + (index * 50)"
+        :data-aos-delay="500 + (index * 50)"
       >
         <NuxtImg :src="profile.image" :alt="profile.name" class="profile-img" />
         <div class="profile-text">
