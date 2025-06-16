@@ -54,7 +54,7 @@
       </div>
       <div class="media d-none d-md-flex">
         <NuxtImg 
-          src="/landing/company/teams/image.png" 
+          src="/landing/company/teams/assetdownload.png" 
           alt="Brand Assets" 
           class="img" 
         />
@@ -68,7 +68,7 @@ const lifeCards = [
   {
     id: 1,
     type: 'image-card',
-    image: '/landing/company/teams/group.png',
+    image: '/landing/company/teams/team-group.png',
     alt: 'Team Meeting'
   },
   {
@@ -81,7 +81,7 @@ const lifeCards = [
   {
     id: 3,
     type: 'image-card',
-    image: '/landing/company/teams/solo-1.png',
+    image: '/landing/company/teams/team-img-1.png',
     alt: 'Remote Work'
   },
   {
@@ -94,7 +94,7 @@ const lifeCards = [
   {
     id: 5,
     type: 'image-card',
-    image: '/landing/company/teams/solo-2.png',
+    image: '/landing/company/teams/team-img-2.png',
     alt: 'Team Collaboration'
   },
   {

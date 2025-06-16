@@ -53,7 +53,7 @@
         right: 0;
         width: 100%;
         height: 100%;
-        background: url("/landing/company/teams/background.svg") center/cover no-repeat fixed;
+        background: url("/landing/company/teams/gridbg.svg") center/cover no-repeat fixed;
         transition: all 0.3s ease;
         z-index: -1;
     }
