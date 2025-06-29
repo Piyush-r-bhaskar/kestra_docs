@@ -3,10 +3,7 @@ title: "Conditional Inputs in Kestra: Handle Complexity in the Simplest Way Poss
 description: Introduced in Kestra 0.19, the conditional inputs feature allows you to create dynamic workflows where inputs adapt in real-time based on user selections, enabling more flexible and intelligent workflow management.
 date: 2024-10-03T13:00:00
 category: Solutions
-author:
-  name: Martin-Pierre Roset
-  role: 
-  image: mproset
+author: mproset
 image: /blogs/2024-10-03-conditional-inputs.jpg
 ---
 

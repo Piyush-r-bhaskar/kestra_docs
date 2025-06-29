@@ -3,10 +3,8 @@ title: "How Kestra engineers optimized orchestrator performance"
 description: "Performance is a critical aspect of an orchestrator. Read how Kestra engineers improved the orchestrator's performance in recent versions."
 date: 2025-02-06T13:00:00
 category: Solutions
-author:
-  name: Loïc Mathieu
-  image: lmathieu
-  role: Lead Developer
+
+author: lmathieu
 image: /blogs/optimized-performance.png
 ---
 

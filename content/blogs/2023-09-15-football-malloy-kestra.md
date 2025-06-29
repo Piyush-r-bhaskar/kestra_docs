@@ -3,9 +3,8 @@ title: "Scrape & Analyze Football Data with Kestra, Malloy and DuckDB"
 description: "Using the power of declarative & nice semantics"
 date: 2023-09-15T14:00:00
 category: Solutions
-author:
-  name: Benoit Pimpaud
-  image: "bpimpaud"
+
+author: bpimpaud
 image: /blogs/2023-09-15-football-malloy-kestra.jpg
 ---
 

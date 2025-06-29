@@ -3,10 +3,7 @@ title: "Orchestrate Your Airflow Jobs with Kestra: One Workflow at a Time"
 description: Integrate your existing Airflow DAGs with Kestra, avoid complex migrations and get better monitoring, and simplified workflow management. Scale your workflows without the need to rewrite everything from scratch.
 date: 2024-10-22T15:00:00
 category: Solutions
-author:
-  name: Martin-Pierre Roset
-  role:
-  image: mproset
+author: mproset
 image: /blogs/2024-10-22-orchestrate-dags-with-kestra.jpg
 ---
 

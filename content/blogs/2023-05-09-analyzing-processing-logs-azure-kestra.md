@@ -3,9 +3,8 @@ title: "Analyzing and Processing Log Files with Azure Blob Storage, Azure Batch,
 description: Use Kestra and Azure to process and analyze log files in the cloud. 
 date: 2023-05-09T12:00:00
 category: Solutions
-author:
-  name: Benoit Pimpaud
-  image: "bpimpaud"
+
+author: bpimpaud
 image: /blogs/2023-05-09-analyzing-processing-logs-azure-kestra.jpg
 ---
 

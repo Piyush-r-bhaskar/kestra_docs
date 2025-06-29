@@ -3,10 +3,8 @@ title: "Lessons Learned from Turning an Open-Source Project into a Viable Busine
 description: "Kestra is an open-source orchestrator that has grown to thousands of users. Staying true to open-source has been a key factor in our growth, and we’re sharing the lessons we’ve learned along the way."
 date: 2024-09-25T18:00:00
 category: Company News
-author:
-  name: Ludovic Dehon
-  image: "ldehon"
-  role: "CTO & Co-Founder"
+
+author: ldehon
 image: /blogs/2024-09-25-our-open-source-choices.jpg
 ---
 

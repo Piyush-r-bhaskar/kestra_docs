@@ -3,9 +3,8 @@ title: "How to Use Google's Gemini Generative AI multimodal completion"
 description: "Explore how to use Gemini, Google's Generative AI, with Kestra."
 date: 2024-02-01T12:00:00
 category: Solutions
-author:
-  name: Loïc Mathieu
-  image: "lmathieu"
+
+author: lmathieu
 image: /blogs/2024-02-01-gemini-multi-modal-completion.jpg
 ---
 

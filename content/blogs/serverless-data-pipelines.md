@@ -3,10 +3,8 @@ title: Serverless Data Pipelines with Kestra, Modal, dbt, and BigQuery
 description: Learn how to create interactive workflows that dynamically adapt compute to your needs using Kestra’s open-source orchestration platform and serverless infrastructure provided by Modal and BigQuery.
 date: 2024-10-21T11:30:00
 category: Solutions
-author:
-  name: Anna Geller
-  image: ageller
-  role: Product Lead
+
+author: ageller
 image: /blogs/serverless-data-pipelines.jpg
 ---
 

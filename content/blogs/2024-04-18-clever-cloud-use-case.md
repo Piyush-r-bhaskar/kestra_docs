@@ -3,9 +3,8 @@ title: "Clever Cloud Offloading 20TB of Infrastructure Data Every Month with Kes
 description: "Discover how Clever Cloud, a leading PaaS solution have automated their archiving process using Kestra."
 date: 2024-04-18T08:00:00
 category: Solutions
-author:
-  name: Martin-Pierre Roset
-  image: "mproset"
+
+author: mproset
 image: /blogs/2024-04-18-clever-cloud-use-case.jpg
 ---
 

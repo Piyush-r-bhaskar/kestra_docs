@@ -3,9 +3,8 @@ title: "Getting Started with Kestra as a Non-Technical User"
 description: Install Kestra and run your first flow
 date: 2023-05-30T14:00:00
 category: Solutions
-author:
-  name: Quentin Sinig
-  image: "qsinig"
+
+author: qsinig
 image: /blogs/2023-05-31-beginner-guide-kestra.jpg
 ---
 

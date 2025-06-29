@@ -3,9 +3,8 @@ title: "Kestra & Snowflake Partnership: How our users orchestate their Data Ware
 description: "Following our partnership announcement with Snowflake, an increasing number of Kestra users are effectively orchestrating their Snowflake environments"
 date: 2024-03-21T08:00:00
 category: Company News
-author:
-  name: Emmanuel Darras
-  image: "edarras"
+
+author: edarras
 image: /blogs/2024-03-21-orchestrate-snowflake-with-kestra.jpg
 ---
 

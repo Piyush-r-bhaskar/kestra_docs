@@ -3,9 +3,8 @@ title: "Orchestrate dbt Jobs with Kestra"
 description: "Dive into the ways to use dbt in a, quite literally, transformative way!"
 date: 2024-04-02T08:00:00
 category: Solutions
-author:
-  name: Martin-Pierre Roset
-  image: "mproset"
+
+author: mproset
 image: /blogs/2024-04-02-dbt-kestra.jpg
 ---
 

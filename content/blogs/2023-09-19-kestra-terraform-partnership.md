@@ -3,9 +3,8 @@ title: "Kestra and Terraform by HashiCorp Join Forces to Enable Everything-as-Co
 description: "Introducing the strategic partnership with Terraform by Hashicorp — Kestra is now a verified Terraform partner. Learn in this post how Kestra's battle-tested Terraform provider, with over 200,000 downloads, simplifies CI/CD for operational and analytical workflows."
 date: 2023-09-19T17:00:00
 category: Company News
-author:
-  name: Martin-Pierre Roset
-  image: "mproset"
+
+author: mproset
 image: /blogs/2023-09-19-kestra-terraform-partnership.jpg
 ---
 

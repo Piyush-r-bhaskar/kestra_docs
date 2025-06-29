@@ -3,10 +3,7 @@ title: "🚀 Kestra Secures $8 Million to Simplify and Unify Orchestration for A
 description: "Enterprises worldwide trust Kestra to orchestrate workflows at any scale, and today, we are proud to announce our seed round, a testament to the strong adoption and confidence in our platform’s ability to power critical operations across industries."
 date: 2024-09-23T14:00:00
 category: Company News
-author:
-  name: Emmanuel Darras
-  image: "edarras"
-  role: "CEO & Co-Founder"
+author: edarras
 image: /blogs/2024-09-23-kestra-raises-8m-seed/funding_announcement_8M.jpg
 ---
 

@@ -3,10 +3,7 @@ title: "Build Scalable dbt Workflows with built-in Code Editor, Git Sync and Tas
 description: Scale and automate dbt workflows with Kestra. Sync your dbt project from Git, scale your dbt models with Kestra's task runners, and edit dbt code directly from the built-in code Editor in the UI!
 date: 2024-10-08T13:00:00
 category: Solutions
-author:
-  name: Martin-Pierre Roset
-  role:
-  image: mproset
+author: mproset
 image: /blogs/2024-10-08-dbt-kestra.jpg
 ---
 

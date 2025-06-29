@@ -3,9 +3,7 @@ title: "Orchestrating Genomic Data Workflows: SOPHIA GENETICS Optimizes Operatio
 description: "How a leading company in the pharmaceutical industry use Kestra to orchestrate genomic data workflows?"
 date: 2024-11-05T13:00:00
 category: Solutions
-author:
-  name: Benoit Pimpaud
-  image: "bpimpaud"
+author: bpimpaud
 image: /blogs/2024-11-05-sophia-genetics-use-case.jpg
 ---
 

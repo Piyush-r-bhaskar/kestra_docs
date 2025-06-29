@@ -8,25 +8,24 @@
                     {{ blog.title }}
                 </h3>
                 <p class="text">{{ blog.description }}</p>
-                <BlogCardDetails :authors="blog.authors || (blog.author ? [blog.author] : [])" :date="blog.date"/>
+                <BlogCardDetails :authors="authors" :date="blog.date"/>
             </div>
         </NuxtLink>
     </div>
 </template>
 
-<script>
-    import BlogCardDetails from "./BlogCardDetails.vue";
+<script setup>
+import BlogCardDetails from "./BlogCardDetails.vue"
 
-    export default {
-        name: "HighlightBlogCard",
-        components: {BlogCardDetails},
-        props: {
-            blog: {
-                type: Object,
-                required: true,
-            },
-        }
+const props = defineProps({
+    blog: {
+        type: Object,
+        required: true
     }
+})
+
+const { getAuthors } = useBlogAuthors(props.blog)
+const authors = computed(() => getAuthors())
 </script>
 
 <style lang="scss" scoped>

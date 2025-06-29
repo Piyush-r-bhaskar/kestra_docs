@@ -3,9 +3,8 @@ title: "Introduction to ELT with CloudQuery — a declarative data integration f
 description: "This post introduces CloudQuery and shows how you can put your CloudQuery syncs to production using Kestra."
 date: 2024-03-13T16:15:00
 category: Solutions
-author:
-  name: Anna Geller
-  image: "ageller"
+
+author: ageller
 image: /blogs/2024-03-12-introduction-to-cloudquery.png
 ---
 

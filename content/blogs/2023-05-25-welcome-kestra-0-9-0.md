@@ -3,10 +3,8 @@ title: "Welcome Kestra 0.9.0 ✨"
 description: This latest update brings a range of user experience improvements to make data orchestration a more enjoyable experience.
 date: 2023-05-25T09:00:00
 category: News & Product Updates
-author:
-  name: Benoit Pimpaud
-  image: "bpimpaud"
-  twitter: "@Ben8t"
+
+author: bpimpaud
 image: /blogs/2023-05-25-welcome-kestra-0-9-0.jpg
 ---
 

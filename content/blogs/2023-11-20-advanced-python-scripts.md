@@ -3,9 +3,8 @@ title: "Kestra and Python: How to Run and Integrate Complex Scripts into Your Fl
 description: "Learn two recommended and scalable ways of including long and complex Python scripts into your Kestra flows."
 date: 2023-11-20T12:00:00
 category: Solutions
-author:
-  name: Dario Radecic
-  image: "dradecic"
+
+author: dradecic
 image: /blogs/2023-11-20-advanced-python-scripts.jpg
 ---
 

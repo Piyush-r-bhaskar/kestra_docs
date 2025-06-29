@@ -3,9 +3,8 @@ title: "Kestra Raises $3 Million to Simplify and Unify Orchestration for All Eng
 description: "Kestra raises $3 million in funding to continue building a language-agnostic, universal open-source orchestration platform, empowering software and data engineers across industries."
 date: 2023-10-05T10:00:00
 category: News & Product Updates
-author:
-  name: Emmanuel Darras
-  image: "edarras"
+
+author: edarras
 image: /blogs/2023-10-05-announcing-Kestra-funding-to-build-the-universal-open-source-orchestrator.jpg
 ---
 

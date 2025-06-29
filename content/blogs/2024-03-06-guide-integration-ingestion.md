@@ -3,9 +3,8 @@ title: "The Guide to Cloud Data Warehouse Integration and Ingestion"
 description: "All you need to know about integration and Ingestion in your Cloud Data Warehouse"
 date: 2024-03-06T12:00:00
 category: Solution
-author:
-  name: Kevin Fleming
-  image: "kfleming"
+
+author: kfleming
 image: /blogs/2024-03-06-guide-integration-ingestion.jpg
 ---
 

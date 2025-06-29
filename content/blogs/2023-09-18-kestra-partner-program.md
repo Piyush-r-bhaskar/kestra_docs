@@ -3,9 +3,8 @@ title: "Announcing Kestra Partner Program"
 description: "We are thrilled to announce the launch of our partner program, a significant milestone for Kestra as we continue to expand our presence in orchestrating applications and mission-critical operations."
 date: 2023-09-18T12:00:00
 category: Company News
-author:
-  name: Quentin Sinig
-  image: "qsinig"
+
+author: qsinig
 image: /blogs/2023-09-18-kestra-partner-program.jpg
 ---
 

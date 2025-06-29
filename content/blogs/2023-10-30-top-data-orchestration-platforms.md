@@ -3,9 +3,8 @@ title: "Top 5 Orchestration Tools in 2023"
 description: "You never had more options when it comes to choosing an orchestration platform - Here's a curated list for 2023 and beyond."
 date: 2023-10-30T12:00:00
 category: Solutions
-author:
-  name: Dario Radecic
-  image: "dradecic"
+
+author: dradecic
 image: /blogs/2023-10-30-top-data-orchestration-platforms-2023.png
 ---
 

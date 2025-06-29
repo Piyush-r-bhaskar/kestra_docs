@@ -3,10 +3,8 @@ title: "Declarative from Day One: Why we choose this path"
 description: Many platforms are now touting declarative configurations or visual builders, trying to retrofit declarative features into complex workflow code systems.
 date: 2025-04-16T13:00:00
 category: Solutions
-author:
-  name: Emmanuel Darras
-  image: edarras
-  role: CEO & Co-Founder
+
+author: edarras
 image: /blogs/declarative-orchestration.jpg
 ---
 

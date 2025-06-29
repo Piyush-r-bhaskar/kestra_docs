@@ -3,9 +3,8 @@ title: "Run Your Code Across Any Environment with Task Runners"
 description: "Task Runners are a pluggable system allowing you to run any code anywhere without having to worry about the underlying infrastructure"
 date: 2024-05-15T08:00:00
 category: Solutions
-author:
-  name: Martin-Pierre Roset
-  image: "mproset"
+
+author: mproset
 image: /blogs/2024-05-15-task-runners.jpg
 ---
 

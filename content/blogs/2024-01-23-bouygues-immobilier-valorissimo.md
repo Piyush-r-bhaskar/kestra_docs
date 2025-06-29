@@ -3,9 +3,8 @@ title: "Bouygues Immobilier Platform, Valorissimo Constructing a Modern Data Sta
 description: "Discover how Hanalytics, developped a modern data stack orchestrated with Kestra for Bouygues Immobilier platform, Valorissimo "
 date: 2024-01-23T09:00:00
 category: Solutions
-author:
-  name: Martin-Pierre Roset
-  image: "mproset"
+
+author: mproset
 image: /blogs/2024-01-23-bouygues-immobilier-valorissimo.jpg
 ---
 

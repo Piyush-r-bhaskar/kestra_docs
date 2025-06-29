@@ -3,9 +3,8 @@ title: "Getting Started with Kestra"
 description: "If you're new to Kestra, this post will introduce you step by step to building your first workflows with Python and configuring notifications"
 date: 2024-04-05T10:00:00
 category: Solutions
-author:
-  name: Will Russell
-  image: "wrussell"
+
+author: wrussell
 image: /blogs/2024-04-05-getting-started-with-kestra.png
 ---
 

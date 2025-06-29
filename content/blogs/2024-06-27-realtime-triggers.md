@@ -3,9 +3,8 @@ title: "Using Realtime Triggers in Kestra"
 description: "Learn how to use realtime triggers in Kestra to react to events as they happen"
 date: 2024-06-27T08:00:00
 category: Solutions
-author:
-  name: Shruti Mantri
-  image: "smantri"
+
+author: smantri
 image: /blogs/2024-06-27-realtime-triggers.jpg
 ---
 

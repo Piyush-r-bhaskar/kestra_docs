@@ -3,11 +3,9 @@ title: "How to Automate Infrastructure using Kestra, Ansible and Terraform"
 description: "Learn how to orchestrate infrastructure components using Kestra."
 date: 2024-04-16T17:00:00
 category: Solutions
-author:
-  name: Shruti Mantri
-  image: "smantri"
-image: /blogs/2024-04-16-infrastructure-orchestration-using-kestra.jpg
 
+author: smantri
+image: /blogs/2024-04-16-infrastructure-orchestration-using-kestra.jpg
 ---
 
 You choose orchestration tools to address the majority of your data pipeline orchestration requirements. Many of these tools offer the essential features for data pipeline orchestration through integration with various third-party services. Nevertheless, when it comes to managing infrastructure and maintaining the scripts necessary for constructing the infrastructure, these orchestration tools exhibit shortcomings. Consequently, you employ additional tools such as Jenkins, GitHub Actions and others, as automation servers for handling infrastructure components. This is where Kestra can come in handy, and can save you the pain of introducing and maintaining yet another tool for managing infrastructure orchestration.

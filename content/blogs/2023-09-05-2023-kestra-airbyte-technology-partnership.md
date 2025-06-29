@@ -3,9 +3,8 @@ title: "Announcing Kestra Technology Partnership with Airbyte"
 description: "Kestra and Airbyte share a common vision for the future of the Modern Data Stack. This technical partnership ensures seamless data transfer, task execution, and process automation between Kestra and Airbyte."
 date: 2023-09-05T12:00:00
 category: Company News
-author:
-  name: Martin-Pierre Roset
-  image: "mproset"
+
+author: mproset
 image: /blogs/2023-09-05-2023-kestra-airbyte-technology-partnership.jpg
 ---
 

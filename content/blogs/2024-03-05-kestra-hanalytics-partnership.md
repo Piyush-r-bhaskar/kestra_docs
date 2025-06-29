@@ -3,9 +3,8 @@ title: "Kestra and Hanalytics: Making Analytics Stack Accessible to All Teams"
 description: "We are thrilled to announce our partnership with Hanalytics, a leader in consulting service dedicated to empowering data-rich organizations to enhance their analytics capabilities."
 date: 2024-03-05T12:00:00
 category: Company News
-author:
-  name: Quentin Sinig
-  image: "qsinig"
+
+author: qsinig
 image: /blogs/2024-03-05-kestra-hanalytics-partnership.jpg
 ---
 

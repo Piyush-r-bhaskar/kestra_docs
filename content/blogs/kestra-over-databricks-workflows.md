@@ -3,10 +3,8 @@ title: "Simplifying Databricks Workflow Management with Kestra"
 description: Databricks simplifies big data and ML workflows but brings challenges like cluster costs and debugging complexity. See how Kestra's orchestration enhances Databricks capabilities
 date: 2024-12-18T13:00:00
 category: Solutions
-author:
-  name: Martin-Pierre Roset
-  image: mproset
-  role: 
+
+author: mproset
 image: /blogs/kestra-over-databricks-workflows.jpg
 ---
 

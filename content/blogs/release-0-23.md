@@ -3,9 +3,8 @@ title: Kestra 0.23 introduces Unit Tests for Flows, Multi-Panel Editor with No-C
 description: Kestra 0.23 delivers a multi-panel editor, revamped no-code flow editor, unit tests for flows, new filters, and new plugins for a more productive orchestration experience.
 date: 2025-06-17T17:00:00
 category: News & Product Updates
-author:
-  name: Benoit Pimpaud
-  image: bpimpaud
+
+author: bpimpaud
 image: /blogs/release-0-23.jpg
 ---
 

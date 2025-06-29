@@ -3,9 +3,8 @@ title: "Building A Multi-Tenant SaaS"
 description: "Discover the backstage of building a multi-tenant architecture for a SaaS orchestration platform"
 date: 2024-03-08T12:00:00
 category: Engineering
-author:
-  name: Loïc Mathieu
-  image: "lmathieu"
+
+author: lmathieu
 image: /blogs/2024-03-08-building-multi-tenant-saas.jpg
 ---
 

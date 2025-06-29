@@ -3,9 +3,8 @@ title: "Data Pipelines on Amazon Redshift — How to Orchestrate AWS Services wi
 description: "Build Data Pipelines consisting of AWS services, including DynamoDB, S3, and Redshift using Kestra."
 date: 2024-04-09T10:00:00
 category: Solutions
-author:
-  name: Shruti Mantri
-  image: "smantri"
+
+author: smantri
 image: /blogs/2024-04-09-aws-data-pipeline.jpg
 ---
 

@@ -3,10 +3,8 @@ title: "Snowflake data pipeline with Kestra"
 description: Kestra’s Snowflake plugin makes data warehousing simple. Even non-developers can write relevant flows and data pipeline
 date: 2023-06-22T10:00:00
 category: Solutions
-author:
-  name: Ludovic Dehon
-  image: "ldehon"
-  twitter: "@tchiotludo"
+
+author: ldehon
 image: /blogs/2022-10-05-kestra-snowflake.jpg
 ---
 

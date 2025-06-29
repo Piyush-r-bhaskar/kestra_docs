@@ -3,9 +3,8 @@ title: "Databricks & Kestra Joining Force in a Technological Partnership"
 description: "Discover how Kestra and Databricks unite to transform data workflows, dive into our integrated approach to managing complex data processes"
 date: 2024-03-11T08:00:00
 category: Company News
-author:
-  name: Emmanuel Darras
-  image: "edarras"
+
+author: edarras
 image: /blogs/2024-03-07-databricks-partnership.jpg
 ---
 

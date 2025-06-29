@@ -1,31 +1,28 @@
 <template>
-    <p>{{ authorName }} - {{ timesAgo(date) }}</p>
+    <p>{{ authorNames }} - {{ timesAgo(date) }}</p>
 </template>
 
-<script>
-    import {timesAgo} from "~/utils/times.js";
-    export default {
-        name: "BlogCardDetails",
-        props: {
-            authors: {
-                type: Array,
-                required: true,
-            },
-            date: {
-                type: String,
-                required: true,
-            },
-        },
-        computed: {
-            authorName() {
-                if (!this.authors.length) return '';
-                return this.authors.map(author => author.name).join(', ');
-            }
-        },
-        methods: {
-            timesAgo,
-        },
+<script setup>
+import { timesAgo } from "~/utils/times.js"
+
+const props = defineProps({
+    authors: {
+        type: Array,
+        required: true
+    },
+    date: {
+        type: String,
+        required: true
     }
+})
+
+const authorNames = computed(() => {
+    if (!props.authors?.length) return ''
+    return props.authors
+        .map(author => author?.name)
+        .filter(Boolean)
+        .join(', ')
+})
 </script>
 
 

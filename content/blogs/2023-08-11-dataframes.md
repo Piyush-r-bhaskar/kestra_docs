@@ -3,9 +3,8 @@ title: "Polars, DuckDB, Pandas, Modin, Ponder, Fugue, Daft — which one is the 
 description: "Comparing open-source dataframe and SQL frameworks for data engineering, machine learning and analytics"
 date: 2023-08-10T16:00:00
 category: Solutions
-author:
-  name: Anna Geller
-  image: "ageller"
+
+author: ageller
 image: /blogs/2023-08-11-dataframes.jpg
 ---
 

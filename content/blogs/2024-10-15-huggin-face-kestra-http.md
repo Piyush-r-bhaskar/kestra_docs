@@ -3,10 +3,7 @@ title: "Kestra and Hugging Face: Why Add Complexity When an API Call Will Do?"
 description: Integrating HuggingFace with Kestra will supercharge your workflows with AI-powered features. The HTTP task functionality allows you to tap directly into a powerful library of pre-trained models.
 date: 2024-10-16T18:00:00
 category: Solutions
-author:
-  name: Martin-Pierre Roset
-  role:
-  image: mproset
+author: mproset
 image: /blogs/2024-10-15-huggin-face-kestra-http.jpg
 ---
 

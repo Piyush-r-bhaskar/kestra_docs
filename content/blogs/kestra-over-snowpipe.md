@@ -3,9 +3,8 @@ title: "Beyond Snowpipe: Use Kestra for Complete Snowflake Workflow Orchestratio
 description: While Snowpipe works well for simple ingestion tasks, it creates bottlenecks when your data ecosystem needs transformations, validations, or multi-platform integrations.
 date: 2024-12-17T16:00:00
 category: Solutions
-author:
-  name: Martin-Pierre Roset
-  image: mproset
+
+author: mproset
 image: /blogs/kestra-over-snowpipe.jpg
 ---
 

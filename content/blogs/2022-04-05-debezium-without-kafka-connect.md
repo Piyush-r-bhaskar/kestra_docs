@@ -3,10 +3,8 @@ title: "Integrating Kestra and Debezium to capture database changes without Kafk
 description: Explore the power of integrating Kestra and Debezium to capture database changes more efficiently.
 date: 2023-05-05T12:00:00
 category: Solutions
-author:
-  name: Ludovic Dehon
-  image: "ldehon"
-  twitter: "@tchiotludo"
+
+author: ldehon
 image: /blogs/2022-04-05-debezium-without-kafka-connect.jpg
 ---
 

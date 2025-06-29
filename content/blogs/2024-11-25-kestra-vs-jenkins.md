@@ -3,9 +3,8 @@ title: "Kestra vs Jenkins - Picking the Right Tool"
 description: "Deep Dive into various use cases for both tools"
 date: 2024-11-25T18:00:00
 category: Solutions
-author:
-  name: Will Russell
-  image: "wrussell"
+
+author: wrussell
 image: /blogs/2024-11-25-kestra-vs-jenkins.jpg
 ---
 

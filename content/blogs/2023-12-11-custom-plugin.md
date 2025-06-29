@@ -3,9 +3,8 @@ title: "Overriding a Kestra Plugin for Custom Requirements: Why & How?"
 description: "Building reusable components with Kestra"
 date: 2023-12-11T08:00:00
 category: Solutions
-author:
-  name: Benoit Pimpaud
-  image: "bpimpaud"
+
+author: bpimpaud
 image: /blogs/2023-12-11-custom-plugin.jpg
 ---
 

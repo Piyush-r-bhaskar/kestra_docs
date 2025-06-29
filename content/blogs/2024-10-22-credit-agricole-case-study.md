@@ -1,12 +1,10 @@
 ---
 title: "Scaling Data Operations at Crédit Agricole with Kestra"
 description: Julien Legrand from Crédit Agricole shares how the bank’s data team uses Kestra to optimize infrastructure management, enhance security, and scale data pipelines for mission-critical operations across over 100 of clusters serving NoSQL, MLOps, Streaming & Big Data use cases.
-date:  2024-10-22T17:00:00
+date: 2024-10-22T17:00:00
 category: Solutions
-author:
-  name: Julien Legrand
-  image: jlegrand
-  role: Data & AI Product Owner
+
+author: jlegrand
 image: /blogs/2024-10-22-credit-agricole-case-study.jpg
 ---
 

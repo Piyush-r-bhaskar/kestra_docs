@@ -3,10 +3,7 @@ title: "Using Amazon S3 Tables with Kestra"
 description: "A step-by-step walkthrough of how we can orchestrate data loading into Amazon S3 tables using Kestra."
 date: 2025-03-27T17:00:00
 category: Solutions
-author:
-  name: Shruti Mantri
-  image: smantri
-  role: 
+author: smantri
 image: /blogs/s3-table.jpg
 ---
 

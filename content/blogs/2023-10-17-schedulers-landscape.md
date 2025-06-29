@@ -3,11 +3,9 @@ title: "DollarU, Control-M, Kestra — how to choose the right scheduling platfo
 description: "How the scheduling landscape has evolved in the last decade? Learn more about the differences between traditional schedulers and tools, such as Kestra, providing a more modern approach to orchestration and scheduling."
 date: 2023-10-17T17:00:00
 category: Solutions
-author:
-  name: Martin-Pierre Roset
-  image: "mproset"
-image: /blogs/2023-10-17-schedulers-landscape.jpg
 
+author: mproset
+image: /blogs/2023-10-17-schedulers-landscape.jpg
 ---
 Gone are the days of rudimentary cron jobs. With the rise of microservices, big data, and cloud-native distributed technologies, job scheduling has evolved to meet the needs of modern engineering workflows.
 

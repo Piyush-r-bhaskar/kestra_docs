@@ -3,9 +3,8 @@ title: YAML Crash Course with Kestra Flow Examples
 description: Given the versatility and popularity of this configuration language, understanding YAML is a must-have skill for any engineering professional. This post provides a YAML crash course with practical Kestra flow examples.
 date: 2023-11-27T17:00:00
 category: Solutions
-author:
-  name: Anna Geller
-  image: "ageller"
+
+author: ageller
 image: /blogs/2023-11-27-yaml-crashcourse.png
 ---
 

@@ -3,9 +3,8 @@ title: "Efficient & Automated Football Data Analytics in MLS with Kestra"
 description: "How a Major League Soccer club use Kestra to power its analytics initiative"
 date: 2023-10-13T16:30:00
 category: Solutions
-author:
-  name: Benoit Pimpaud
-  image: "bpimpaud"
+
+author: bpimpaud
 image: /blogs/2023-10-13-kestra-mls.jpg
 ---
 

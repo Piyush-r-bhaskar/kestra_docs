@@ -3,9 +3,8 @@ title: "Enabling Business Users in a Centralized Environment"
 description: "It's time to have tools that are both suitable for business users and engineers"
 date: 2023-12-19T08:00:00
 category: Solutions
-author:
-  name: Martin-Pierre Roset
-  image: "mproset"
+
+author: mproset
 image: /blogs/2023-12-19-enabling-business-in-it.jpg
 ---
 

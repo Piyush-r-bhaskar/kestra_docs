@@ -3,9 +3,8 @@ title: "Kestra and Weaviate: How to Work with Vector Databases in Kestra"
 description: "Learn what in the world is a vector database and how to include one in your workflows."
 date: 2023-10-31T08:00:00
 category: Solutions
-author:
-  name: Dario Radecic
-  image: "dradecic"
+
+author: dradecic
 image: /blogs/2023-10-31-kestra-weaviate.jpg
 ---
 

@@ -3,9 +3,8 @@ title: "Your Private App Store for Data Pipelines"
 description: "New feature: Data Orchestration Blueprints to Kickstart Your Next Flow"
 date: 2023-07-12T14:00:00
 category: Solutions
-author:
-  name: Anna Geller
-  image: "ageller"
+
+author: ageller
 image: /blogs/2023-07-12-your-private-app-store-for-data-pipelines.png
 ---
 

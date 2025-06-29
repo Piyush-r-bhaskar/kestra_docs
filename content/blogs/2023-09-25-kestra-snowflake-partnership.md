@@ -3,9 +3,8 @@ title: "Kestra Becomes a Registered Partner with Snowflake for Enhanced Data Wor
 description: "Kestra and Snowflake join forces to offer integrated solutions for data workflow management. Learn how this partnership brings efficiency and reliability to your data pipelines, from event-driven triggers to simplified file management."
 date: 2023-09-25T17:00:00
 category: Company News
-author:
-  name: Martin-Pierre Roset
-  image: "mproset"
+
+author: mproset
 image: /blogs/2023-09-25-kestra-snowflake-partnership.jpg
 ---
 

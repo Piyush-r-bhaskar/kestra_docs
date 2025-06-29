@@ -3,10 +3,7 @@ title: Deploying Kestra in Clever Cloud
 description: How to deploy Kestra in Clever Cloud Platform as a Service.
 date: 2024-10-15T13:00:00
 category: Solutions
-author:
-  name: Loïc Mathieu
-  role: Lead Software Engineer
-  image: lmathieu
+author: lmathieu
 image: /blogs/2024-10-15-deploying-kestra-in-clever-cloud.jpg
 ---
 

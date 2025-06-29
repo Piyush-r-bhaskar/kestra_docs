@@ -3,10 +3,8 @@ title: "Namespace Files in Kestra: Reusable Logic Without Losing Control"
 description: Kestra’s Namespace Files let you reuse code and config across workflows without giving up structure, security, or speed.
 date: 2025-05-20T13:00:00
 category: Solutions
-author:
-  name: Martin-Pierre Roset
-  image: mproset
-  role: 
+
+author: mproset
 image: /blogs/namespace.png
 ---
 Engineering teams all face a familiar dilemma: strike the right balance between central governance and team autonomy or risk chaos. Centralization slows everyone down. Decentralization breeds inconsistency and risk. Most orchestration platforms force you to pick a side. **Kestra doesn’t.** Inspired by infrastructure best practices like Kubernetes, Kestra brings logical isolation, inheritance, and secure reusability to orchestration through a powerful feature called **Namespace Files**.

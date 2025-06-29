@@ -3,10 +3,8 @@ title: "Optimizing Performance in Kestra in Version 0.22"
 description: "Performance is a critical aspect of an orchestrator. Discover how Kestra 0.22 significantly enhances execution speed, reduces resource consumption, and improves overall system performance."
 date: 2025-04-04T13:00:00
 category: Solutions
-author:
-  name: Loïc Mathieu
-  image: lmathieu
-  role: Lead Developer
+
+author: lmathieu
 image: /blogs/optimized-performance-2.png
 ---
 

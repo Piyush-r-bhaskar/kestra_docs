@@ -3,9 +3,8 @@ title: "CleverConnect: Using Kestra to Help 350 Million People Find a Fulfilling
 description: "How the HR company uses Kestra as the backbone of their platform."
 date: 2023-11-21T09:00:00
 category: Solutions
-author:
-  name: Benoit Pimpaud
-  image: "bpimpaud"
+
+author: bpimpaud
 image: /blogs/2023-11-21-clever-connect-hr-tech.jpg
 ---
 

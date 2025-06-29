@@ -3,9 +3,8 @@ title: "From Raw Data to Actionable Insights: A Deep Dive into Reverse ETL and C
 description: "Dive into Reverse ETL and Customer Data Platforms (CDPs).Discover their distinct advantages and overlapping functionalities."
 date: 2023-09-04T16:00:00
 category: Solutions
-author:
-  name: Martin-Pierre Roset
-  image: "mproset"
+
+author: mproset
 image: /blogs/2023-09-04-reverse-etl-vs-cdp.jpg
 ---
 

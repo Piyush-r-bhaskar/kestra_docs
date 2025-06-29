@@ -3,9 +3,8 @@ title: "Why I Love Kestra: 10 Features That Have Won Me Over"
 description: "This blog post lists 10 Kestra features that have changed my work for the better."
 date: 2024-04-04T10:00:00
 category: Solutions
-author:
-  name: Shruti Mantri
-  image: "smantri"
+
+author: smantri
 image: /blogs/2024-04-04-top-10-cool-features-I-love-about-kestra.jpg
 ---
 

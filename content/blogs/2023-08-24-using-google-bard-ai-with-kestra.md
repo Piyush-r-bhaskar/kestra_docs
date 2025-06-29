@@ -3,9 +3,8 @@ title: "How to Use Google's PaLM 2 Bard AI to Start Your Day with a Smile"
 description: "Explore how to use Bard, Google's AI, with Kestra to get daily jokes by email. Step-by-step guide for a humorous start to your day."
 date: 2023-08-24T12:00:00
 category: Solutions
-author:
-  name: Loïc Mathieu
-  image: "lmathieu"
+
+author: lmathieu
 image: /blogs/2023-08-24-using-google-bard-ai-with-kestra.jpg
 ---
 

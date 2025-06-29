@@ -3,9 +3,8 @@ title: "Kestra Becomes the First Real-Time Orchestration Platform"
 description: "The future of orchestration is real-time, and it’s already here with Kestra"
 date: 2024-06-25T17:00:00
 category: Company News
-author:
-  name: Emmanuel Darras
-  image: "edarras"
+
+author: edarras
 image: /blogs/2024-06-25-kestra-become-real-time.jpg
 ---
 

@@ -343,7 +343,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted, watch, computed } from 'vue';
+import { ref, onMounted, onUnmounted, watch, computed, nextTick, type CSSProperties } from 'vue';
 import { useRoute, useNuxtApp } from '#app';
 import ChevronDown from "vue-material-design-icons/ChevronDown.vue";
 import ChevronUp from "vue-material-design-icons/ChevronUp.vue";
@@ -373,7 +373,7 @@ const headerMenuSize = ref({
     width: '0px',
     height: '0px',
 });
-const headerMenuPointerEvents = ref('none');
+const headerMenuPointerEvents = ref<'auto' | 'none'>('none');
 const navbar = ref<HTMLElement | null>(null);
 
 interface Collapse {
@@ -395,8 +395,12 @@ if (process.client) {
 
 onMounted(() => {
     if (process.client) {
-        collapse = new nuxtApp.$bootstrap.Collapse('#main-header', {
-            toggle: false
+        // Wait for bootstrap to be available
+        nextTick(() => {
+            const bootstrap = nuxtApp.$bootstrap as any;
+            collapse = bootstrap?.Collapse 
+                ? new bootstrap.Collapse('#main-header', { toggle: false })
+                : undefined;
         });
 
         document.documentElement.style.setProperty("--top-bar-height", navbar.value?.offsetHeight + "px");
@@ -410,14 +414,7 @@ onUnmounted(() => {
     }
 });
 
-interface MenuStyles {
-    transform: string;
-    width: string;
-    height: string;
-    pointerEvents: string;
-}
-
-const headerMenuStyles = computed<MenuStyles>(() => {
+const headerMenuStyles = computed<CSSProperties>(() => {
     return {
         transform: `translateX(${headerMenuTranslateX.value}) rotateX(-15deg)`,
         width: headerMenuSize.value.width,

@@ -3,9 +3,8 @@ title: "Kestra: The Terraform of Automation and Orchestration"
 description: Many people have recently been describing Kestra as Terraform for data pipelines. This post will elaborate on that aspect in terms of our approach towards workflow management and orchestration. While we want to offer Software and Data Engineers the same transformative impact as Terraform had on the world of infrastructure management, there are some differences in how we see the Everything as Code paradigm being applied to the world of workflow automation.
 date: 2023-12-05T08:00:00
 category: Company News
-author:
-  name: Emmanuel Darras
-  image: "edarras"
+
+author: edarras
 image: /blogs/2023-12-05-Kestra-the-terrafrom-of-orchestration-and-automation.jpg
 ---
 

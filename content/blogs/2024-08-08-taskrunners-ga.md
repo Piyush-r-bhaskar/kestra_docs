@@ -3,9 +3,8 @@ title: Task Runners are now Generally Available and Ready to Handle Your Most De
 description: Run your code anywhere with dynamically-provisioned resources.
 date: 2024-08-08T13:00:00
 category: News & Product Updates
-author:
-  name: Anna Geller
-  image: ageller
+
+author: ageller
 image: /blogs/2024-08-08-taskrunners-ga.png
 ---
 

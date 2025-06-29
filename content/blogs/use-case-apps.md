@@ -3,9 +3,8 @@ title: "Empower Business Users with Kestra Apps: Build Intuitive UIs on Top of Y
 description: Endless possibilities with Kestra Apps
 date: 2024-12-11T17:00:00
 category: Solutions
-author:
-  name: Benoit Pimpaud
-  image: bpimpaud
+
+author: bpimpaud
 image: /blogs/use-case-apps.jpg
 ---
 

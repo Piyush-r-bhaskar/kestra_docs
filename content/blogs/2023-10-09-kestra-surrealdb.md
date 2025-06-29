@@ -3,9 +3,8 @@ title: "Kestra and SurrealDB: How to Orchestrate your Applications and Microserv
 description: "Learn how to include a multi-model database in your data flows with Kestra."
 date: 2023-10-09T08:00:00
 category: Solutions
-author:
-  name: Dario Radecic
-  image: "dradecic"
+
+author: dradecic
 image: /blogs/2023-10-09-kestra-surrealdb.jpg
 ---
 

@@ -3,9 +3,8 @@ title: "Announcing Dremio Partnership: Orchestrate Your Data Lakehouse with Kest
 description: "We are proud to announce our partnership with Dremio, a data lakehouse platform that simplifies big data analytics."
 date: 2024-03-14T08:00:00
 category: Company News
-author:
-  name: Emmanuel Darras
-  image: "edarras"
+
+author: edarras
 image: /blogs/2024-03-14-dremio-partnership.jpg
 ---
 

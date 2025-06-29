@@ -3,9 +3,7 @@ title: "Kestra vs. Popular CI/CD Tools: When to Choose an Orchestration Solution
 description: "Learn when to to choose an orchestrator rather than a CI/CD solution"
 date: 2024-10-17T15:00:00
 category: Solutions
-author:
-  name: Federico Trotta
-  image: "ftrotta"
+author: federico
 image: /blogs/2024-10-17-ci-cd-kestra-comparison.jpg
 ---
 

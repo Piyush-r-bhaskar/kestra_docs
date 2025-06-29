@@ -3,9 +3,8 @@ title: "Integrate Your Code into Kestra"
 description: "Learn how to integrate your code into workflows in Kestra."
 date: 2024-10-25T13:00:00
 category: Solutions
-author:
-  name: Will Russell
-  image: "wrussell"
+
+author: wrussell
 image: /blogs/2024-10-25-code-in-any-language.jpg
 ---
 

@@ -3,9 +3,8 @@ title: "Automate Data Analysis With Kestra and DuckDB"
 description: Use Kestra and DuckDB to extract, process, and organize tech job salary data for better insights. 
 date: 2023-04-25T18:00:00
 category: Solutions
-author:
-  name: Martin Pierre Roset
-  image: "mproset"
+
+author: mproset
 image: /blogs/2023-04-25-automate-data-analysis-with-kestra-and-duckdb.jpg
 ---
 

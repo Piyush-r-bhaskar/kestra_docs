@@ -3,9 +3,8 @@ title: "What you Need to Know to Choose the Right Data Orchestrator"
 description: Key factors to consider when choosing a Data orchestrator.
 date: 2023-05-22T18:00:00
 category: Solutions
-author:
-  name: Martin Pierre Roset
-  image: "mproset"
+
+author: mproset
 image: /blogs/2023-05-22-data-orchestration-choosing-the-right-tool.jpg
 ---
 

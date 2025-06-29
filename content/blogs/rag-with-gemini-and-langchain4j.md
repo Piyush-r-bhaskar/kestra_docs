@@ -3,10 +3,8 @@ title: "Retrieval Augmented Generation (RAG) with Google Gemini AI and Langchain
 description: Create a Retrieval Augmented Generation pipeline with Google Gemini AI and the Langchain4J plugin.
 date: 2025-06-10T13:00:00
 category: Solutions
-author:
-  name: Loïc Mathieu
-  image: lmathieu
-  role: Lead Developer
+
+author: lmathieu
 image: /blogs/rag.jpg
 ---
 

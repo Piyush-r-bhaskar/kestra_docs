@@ -3,10 +3,8 @@ title: Kestra 0.20 adds SLAs, Invites, User-Facing Apps, Isolated Storage and Se
 description: Build user-facing apps directly from Kestra, send invites to users, and fully isolate storage and secrets per tenant or namespace.
 date: 2024-12-03T17:00:00
 category: News & Product Updates
-author:
-  name: Anna Geller
-  image: ageller
-  role: Product Lead
+
+author: ageller
 image: /blogs/release-0-20.png
 ---
 

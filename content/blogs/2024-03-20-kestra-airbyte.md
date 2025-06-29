@@ -3,9 +3,8 @@ title: "Integrate Airbyte using Kestra"
 description: "Learn how you can integrate Airbyte using Kestra, and create Kestra tasks that could invoke Airbyte operations."
 date: 2024-03-20T10:00:00
 category: Solutions
-author:
-  name: Shruti Mantri
-  image: "smantri"
+
+author: smantri
 image: /blogs/2024-03-20-kestra-airbyte.jpg
 ---
 

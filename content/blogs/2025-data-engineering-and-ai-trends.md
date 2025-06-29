@@ -3,10 +3,8 @@ title: "2025 Data Engineering & AI Trends"
 description: "How Generative AI, new data regulations, and open table formats affect the data engineering landscape in 2025 and beyond"
 date: 2025-01-24T13:00:00
 category: Solutions
-author:
-  name: Anna Geller
-  image: ageller
-  role: Product Lead
+
+author: ageller
 image: /blogs/2025-data-engineering-and-ai-trends.png
 ---
 

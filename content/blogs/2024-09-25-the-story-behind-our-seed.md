@@ -3,10 +3,8 @@ title: "How Kestra Raised $8M: Our Seed Deck, Now Public"
 description: "Unveiling Our Journey to $8M: Vision, Challenges, and Investor Trust."
 date: 2024-09-25T14:00:00
 category: Company News
-author:
-  name: Emmanuel Darras
-  image: "edarras"
-  role: "CEO & Co-Founder"
+
+author: edarras
 image: /blogs/2024-09-25-the-story-behind-our-seed.jpg
 ---
 

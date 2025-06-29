@@ -3,9 +3,8 @@ title: "Building the Layer for Data Choreography"
 description: "Going beyond classic data orchestration: the user experience"
 date: 2023-09-13T15:00:00
 category: Solutions
-author:
-  name: Benoit Pimpaud
-  image: "bpimpaud"
+
+author: bpimpaud
 image: /blogs/2023-09-13-choreography.jpg
 ---
 

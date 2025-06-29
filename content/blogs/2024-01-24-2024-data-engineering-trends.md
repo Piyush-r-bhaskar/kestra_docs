@@ -3,9 +3,8 @@ title: "2024 Data Engineering Trends"
 description: "Data engineering trends we see in 2024 and the impact of AI on data tooling and data job market"
 date: 2024-01-24T16:00:00
 category: Solutions
-author:
-  name: Anna Geller
-  image: "ageller"
+
+author: ageller
 image: /blogs/2024-01-24-2024-data-engineering-trends.png
 ---
 

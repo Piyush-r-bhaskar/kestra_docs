@@ -3,9 +3,8 @@ title: "Unveiling Kestra's New Visual Identity: A Symphony of Design and Innovat
 description: Delve into the essence of Kestra's captivating logo, mirroring our passion for providing state-of-the-art data orchestration solutions and a unique brand experience.
 date: 2023-04-21T11:00:00
 category: Company News
-author:
-  name: Nicolas Callens
-  image: "ncallens"
+
+author: ncallens
 image: /blogs/2023-04-21-unveiling-kestra-s-new-visual-identity.png
 ---
 

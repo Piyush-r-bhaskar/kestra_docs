@@ -7,8 +7,13 @@
         <div class="authors">
             <div v-for="author in authorsList" :key="author.name"
                  class="author d-flex align-items-center gap-3">
-                <NuxtImg loading="lazy" width="48" class="rounded-circle"
-                    :src="'/landing/company/teams/' + author.image + '-sm.png'" :alt="author.name" />
+                <NuxtImg 
+                    loading="lazy" 
+                    width="48" 
+                    class="rounded-circle"
+                    :src="author.image" 
+                    :alt="author.name" 
+                />
                 <div>
                     <p class="name">{{ author.name }}</p>
                     <p v-if="author.role" class="role">{{ author.role }}</p>
@@ -21,7 +26,6 @@
 <script>
 import dayjs from "dayjs";
 import customParseFormat from "dayjs/plugin/customParseFormat"
-import { useBlogAuthors } from "~/composables/useBlogAuthors";
 
 export default {
     name: "BlogDetails",
@@ -36,11 +40,16 @@ export default {
             dayjs.extend(customParseFormat)
             return dayjs(this.blog.date).format("MMMM D YYYY");
         },
-        authorsList() {
-            const { getAuthors } = useBlogAuthors(this.blog);
-            return getAuthors();
-        }
     },
+    async mounted() {
+        const { getAuthors } = useBlogAuthors(this.blog);
+        this.authorsList = await getAuthors();
+    },
+    data() {
+        return {
+            authorsList: []
+        }
+    }
 }
 </script>
 

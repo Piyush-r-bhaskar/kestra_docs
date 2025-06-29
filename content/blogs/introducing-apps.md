@@ -3,10 +3,8 @@ title: "Introducing Apps: Custom UIs for Kestra Workflows"
 description: Build self-service applications for data products and business processes using your Kestra workflows as a backend.
 date: 2024-12-04T13:00:00
 category: News & Product Updates
-author:
-  name: Anna Geller
-  image: ageller
-  role: Product Lead
+
+author: ageller
 image: /blogs/introducing-apps.jpg
 ---
 

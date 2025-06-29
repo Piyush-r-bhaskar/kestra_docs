@@ -3,9 +3,8 @@ title: "Embedded Databases and 2025 Trends: Developer's Perspective"
 description: An overview of embedded databases like DuckDB, chDB, SQLite, and Limbo for 2025—highlighting performance, use cases, and key features.
 date: 2025-01-14T16:00:00
 category: Solutions
-author:
-  name: Martin-Pierre Roset
-  image: mproset
+
+author: mproset
 image: /blogs/embedded-databases.jpg
 ---
 

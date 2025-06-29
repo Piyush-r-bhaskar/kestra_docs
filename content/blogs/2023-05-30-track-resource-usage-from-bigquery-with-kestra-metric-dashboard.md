@@ -3,9 +3,8 @@ title: "Track Resource Usage from BigQuery with Kestra's Metric Dashboard"
 description: Get insight on the bytes processed by your queries on BigQuery to manage your costs. 
 date: 2023-05-30T12:00:00
 category: Solutions
-author:
-  name: Benoit Pimpaud
-  image: "bpimpaud"
+
+author: bpimpaud
 image: /blogs/2023-05-30-track-resource-usage-from-bigquery-with-kestra-metric-dashboard.jpg
 ---
 

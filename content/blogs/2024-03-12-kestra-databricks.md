@@ -3,9 +3,8 @@ title: "Interacting with Databricks using Kestra"
 description: Kestra’s Databricks plugin makes data warehousing simple. Even non-developers can build their own data pipelines in just a few lines of code.
 date: 2024-03-12T10:00:00
 category: Solutions
-author:
-  name: Shruti Mantri
-  image: "smantri"
+
+author: smantri
 image: /blogs/2024-03-12-kestra-databricks.jpg
 ---
 

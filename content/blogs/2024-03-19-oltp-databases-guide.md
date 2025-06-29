@@ -3,9 +3,8 @@ title: "Choosing the Right OLTP Database for Microservices "
 description: "Everything you need to know on OLTP database for your microservice architecture"
 date: 2024-03-19T12:00:00
 category: Solution
-author:
-  name: Kevin Fleming
-  image: "kfleming"
+
+author: kfleming
 image: /blogs/2024-03-19-oltp-databases-guide.jpg
 ---
 

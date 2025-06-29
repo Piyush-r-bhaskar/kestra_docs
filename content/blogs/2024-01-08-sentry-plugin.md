@@ -3,9 +3,8 @@ title: "Integrating Sentry Observability With Your Workflows"
 description: "Learn how to integrate Sentry.io alerting and observability solutions into your Kestra flows"
 date: 2024-01-08T08:00:00
 category: Solutions
-author:
-  name: Kevin Fleming
-  image: "kfleming"
+
+author: kfleming
 image: /blogs/2024-01-08-sentry-plugin.jpg
 ---
 

@@ -3,10 +3,8 @@ title: "Techniques You Should Know as a Kafka Streams Developer"
 description: Discover tips and clever techniques that will help you build resilient and distributed applications
 date: 2023-02-23T08:00:00
 category: Solutions
-author:
-  name: Ludovic Dehon
-  image: "ldehon"
-  twitter: "@tchiotludo"
+
+author: ldehon
 image: /blogs/2023-02-23-techniques-kafka-streams-developer.jpg
 ---
 

@@ -3,10 +3,8 @@ title: "Plugin Versioning & Hot Reload"
 description: Manage the lifecycle of your Kestra plugin ecosystem
 date: 2025-05-07T13:00:00
 category: Solutions
-author:
-  name: Martin-Pierre Roset
-  image: mproset
-  role: 
+
+author: mproset
 image: /blogs/plugin-versioning.png
 ---
 

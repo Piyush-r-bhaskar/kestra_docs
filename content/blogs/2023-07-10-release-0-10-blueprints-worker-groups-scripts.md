@@ -3,9 +3,8 @@ title: "Kestra 0.10.0 release adds Blueprints, Worker Groups, and a new plugin f
 description: "Blueprints, a new script and OpenAI plugins, basic authentication and secrets management, and improved UX for Python, R, Node.js, Shell, and Docker."
 date: 2023-07-07T12:30:00
 category: News & Product Updates
-author:
-  name: Anna Geller
-  image: "ageller"
+
+author: ageller
 image: /blogs/2023-07-10-release-0-10-blueprints-worker-groups-scripts.png
 ---
 

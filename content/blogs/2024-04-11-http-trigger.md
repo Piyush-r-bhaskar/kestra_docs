@@ -3,9 +3,8 @@ title: "Connect to Any API; Automate Everything"
 description: "How to trigger real actions through API connected to the real-world?"
 date: 2024-04-11T17:00:00
 category: Solutions
-author:
-  name: Benoit Pimpaud
-  image: "bpimpaud"
+
+author: bpimpaud
 image: /blogs/2024-04-11-http-trigger.jpg
 ---
 

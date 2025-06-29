@@ -3,10 +3,8 @@ title: "Welcome Kestra 0.7.0 ✨"
 description: Experience a better developer journey with auto-completion, preserved source code, and improved validation. Enjoy seamless CI/CD support, flow dependencies, mass actions, and more!
 date: 2023-03-02T18:00:00
 category: News & Product Updates
-author:
-  name: Ludovic Dehon
-  image: "ldehon"
-  twitter: "@tchiotludo"
+
+author: ldehon
 image: /blogs/2023-03-02-welcome-kestra-0-7-0.jpg
 ---
 

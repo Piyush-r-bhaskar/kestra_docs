@@ -3,11 +3,9 @@ title: "Building A New Liveness and Heartbeat Mechanism For Better Reliability"
 description: "In this episode of engineering stories, discover the benefits of the new heartbeat mechanism, and the problems it solves."
 date: 2024-04-22T17:00:00
 category: Engineering
-author:
-  name: Florian Hussonnois
-  image: "fhussonnois"
-image: /blogs/2024-04-22-liveness-heartbeat.jpg
 
+author: fhussonnois
+image: /blogs/2024-04-22-liveness-heartbeat.jpg
 ---
 Kestra's servers use a heartbeat mechanism to periodically send their current state to the Kestra backend, indicating their liveness. That mechanism is crucial for the timely detection of server failures and for ensuring seamless continuity in workflow executions.
 

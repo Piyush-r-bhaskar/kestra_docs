@@ -3,10 +3,8 @@ title: "How Leroy Merlin managed their cloud data pipelines with Kestra"
 description: Discover how Leroy Merlin moved all their data pipelines to Google Cloud with Kestra
 date: 2022-02-22T18:00:00
 category: Solutions
-author:
-  name: Ludovic Dehon
-  image: "ldehon"
-  twitter: "@tchiotludo"
+
+author: ldehon
 image: /blogs/2022-02-22-leroy-merlin-usage-kestra.jpg
 ---
 

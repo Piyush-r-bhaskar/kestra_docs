@@ -21,7 +21,7 @@
                 <span class="small-text category">{{ blog.category }}</span>
                 <h6 class="my-1">{{ blog.title }}</h6>
                 <BlogsBlogCardDetails 
-                    :authors="blog.authors || (blog.author ? [blog.author] : [])"
+                    :authors="authors"
                     :date="blog.date"
                 />
             </div>
@@ -29,16 +29,16 @@
     </div>
 </template>
 
-<script>
-    export default {
-        name: "BlogCard",
-        props: {
-            blog: {
-                type: Object,
-                required: true,
-            },
-        },
+<script setup>
+const props = defineProps({
+    blog: {
+        type: Object,
+        required: true
     }
+})
+
+const { getAuthors } = useBlogAuthors(props.blog)
+const authors = computed(() => getAuthors())
 </script>
 
 <style scoped lang="scss">
